@@ -1,16 +1,9 @@
 import {
-  IonBadge,
-  IonButton,
-  IonButtons, IonCol,
+  IonCol,
   IonContent, IonGrid,
-  IonHeader,
-  IonIcon,
   IonPage,
   IonRow, IonSearchbar,
-  IonTitle,
-  IonToolbar
 } from '@ionic/react';
-import {bookmark} from "ionicons/icons";
 import React, {useEffect, useState} from "react";
 import homeStyle from './Home.module.scss'
 import 'swiper/swiper.scss';
@@ -19,11 +12,12 @@ import 'swiper/swiper-bundle.css';
 import {foodHeader, foodRecipes} from "../_recipes/food-recipes";
 import {drinksHeader, drinksRecipes} from "../_recipes/drinks-recipes";
 
-import {HomeHit} from "../data/response-recipe";
+import {HomeHit} from "../data/static-recipe";
 import HeaderSlide from "../components/HeaderSlide";
 import DataSlider from "../components/DataSlider";
 import {useHistory} from "react-router";
 import AppBar from "../components/AppBar";
+
 const Home: React.FC = () => {
 
   const history = useHistory();

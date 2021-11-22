@@ -1,3 +1,5 @@
+// INTERSECTION
+
 export interface HomeRecipe{
   label: string,
   image: string
