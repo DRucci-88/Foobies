@@ -1,13 +1,19 @@
 import React from "react";
-import {IonBadge, IonButton, IonButtons, IonHeader, IonIcon, IonTitle, IonToolbar} from "@ionic/react";
+import {IonBackButton, IonBadge, IonButton, IonButtons, IonHeader, IonIcon, IonTitle, IonToolbar} from "@ionic/react";
 import {bookmark} from "ionicons/icons";
 
 const AppBar: React.FC<{
   title: string;
+  backButton: boolean;
 }> = props => {
   return (
     <IonHeader className={'ion-no-margin'}>
       <IonToolbar>
+        {props.backButton && (
+          <IonButtons slot={'start'}>
+            <IonBackButton/>
+          </IonButtons>
+        )}
         <IonTitle>
           {props.title}
           <p className={'ion-no-margin'}>Name </p>

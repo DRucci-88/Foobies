@@ -15,7 +15,7 @@ const Profile: React.FC = () => {
   return(
     <IonPage className={profileStyle.profile}>
 
-      <AppBar title={'Profile'}/>
+      <AppBar title={'Profile'} backButton={false}/>
 
       <IonContent>
 

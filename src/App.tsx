@@ -26,6 +26,7 @@ import React from "react";
 import {home, medkit, person, restaurant} from "ionicons/icons";
 import Recipe from "./pages/Recipe";
 import Profile from "./pages/Profile";
+import Search from "./pages/Search";
 
 const App: React.FC = () => (
   <IonApp>
@@ -36,11 +37,12 @@ const App: React.FC = () => (
           <Route exact path="/home" component={Home}/>
           <Route exact path={'/recipe/:id'} component={Recipe}/>
           <Route exact path={'/profile'} component={Profile}/>
+          <Route exact path={'/search'} component={Search}/>
           <Redirect exact path={'/'} to={'/home'}/>
         </IonRouterOutlet>
 
         <IonTabBar slot={'bottom'}>
-          <IonTabButton tab={'home'} href={'/home'}>
+          <IonTabButton tab={'home'} href={'/home'} >
             Home <IonIcon icon={home}/>
           </IonTabButton>
           <IonTabButton tab={'cook'}>
@@ -49,7 +51,7 @@ const App: React.FC = () => (
           <IonTabButton tab={'health'}>
             Health<IonIcon icon={medkit}/>
           </IonTabButton>
-          <IonTabButton tab={'profile'} href={'/profile'}>
+          <IonTabButton tab={'profile'} href={'/profile'} >
             Profile <IonIcon icon={person}/>
           </IonTabButton>
         </IonTabBar>

@@ -84,14 +84,14 @@ const Home: React.FC = () => {
   return (
     <IonPage>
 
-      <AppBar title={'Home Page'}/>
+      <AppBar title={'Home Page'} backButton={false}/>
 
       <IonContent fullscreen>
 
         <IonGrid>
           <IonRow>
             <IonCol>
-              <div className={homeStyle.search}>
+              <div className={homeStyle.search} onClick={() => history.push('/search')}>
                 <IonSearchbar placeholder={'I am hungry'}/>
               </div>
             </IonCol>
@@ -112,7 +112,7 @@ const Home: React.FC = () => {
           setCategory={drinksCategoryHandler}/>
         <DataSlider
           slideData={drinksDataSlider}
-        goToRecipe={goToRecipeHandler}/>
+          goToRecipe={goToRecipeHandler}/>
 
         <h3>Desserts</h3>
         <HeaderSlide

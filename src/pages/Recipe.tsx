@@ -1,15 +1,8 @@
 import React, {useCallback, useEffect, useState} from "react";
 import {
-  IonBadge,
-  IonButton,
-  IonButtons,
   IonContent,
-  IonHeader,
   IonIcon,
   IonPage,
-  IonTitle,
-  IonToolbar,
-  IonBackButton,
   IonRow,
   IonCardTitle,
   IonCardSubtitle,
@@ -22,16 +15,17 @@ import {
 } from "@ionic/react";
 import recipeStyle from './Recipe.module.scss';
 import {useParams} from "react-router";
-import {bookmark, layersOutline, peopleOutline, scaleOutline, timeOutline} from "ionicons/icons";
+import {layersOutline, peopleOutline, scaleOutline, timeOutline} from "ionicons/icons";
 import axios from "axios";
 import {Hit} from "../data/recipe-response";
-import {getRecipeURLWithId1} from "../data/config-api";
+import {getRecipeURLWithId} from "../data/config-api";
+import AppBar from "../components/AppBar";
 
 const Recipe: React.FC = () => {
 
   // https://stackoverflow.com/questions/63635997/how-to-access-route-params-from-react-router-dom-using-typescript-ex-some-ro
   const id = useParams<{id: string}>();
-  const url = getRecipeURLWithId1(id.id);
+  const url = getRecipeURLWithId(id.id);
   const [recipeAPI, setRecipeAPI] = useState<Hit>();
   const [errorAlert] = useIonAlert();
 
@@ -59,22 +53,8 @@ const Recipe: React.FC = () => {
 
   return (
     <IonPage>
-      <IonHeader className={'ion-no-margin'}>
-        <IonToolbar>
-          <IonButtons slot={'start'}>
-            <IonBackButton/>
-          </IonButtons>
-          <IonTitle>Recipe Detail</IonTitle>
 
-          <IonButtons slot={'end'}>
-            <IonButton>
-              <IonBadge slot={'start'}>0</IonBadge> &nbsp;
-              Bookmark
-              <IonIcon slot={'end'} icon={bookmark}/>
-            </IonButton>
-          </IonButtons>
-        </IonToolbar>
-      </IonHeader>
+      <AppBar title={'Recipe Detail'} backButton={true}/>
 
       <IonContent fullscreen>
 
