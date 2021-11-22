@@ -45,9 +45,9 @@ const Search: React.FC = () => {
   }
 
   const goToRecipeHandler = (href: string) => {
-    // const id = href.split('?')[0].split('/')[6];
-    // console.log(id);
-    // history.replace(`/recipe/${id}`);
+    const id = href.split('?')[0].split('/')[6];
+    console.log(id);
+    history.replace(`/recipe/${id}`);
   }
 
   useIonViewDidEnter(() => {
