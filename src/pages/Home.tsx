@@ -11,6 +11,7 @@ import 'swiper/swiper-bundle.css';
 
 import {foodHeader, foodRecipes} from "../_recipes/food-recipes";
 import {drinksHeader, drinksRecipes} from "../_recipes/drinks-recipes";
+import {dessertsHeader, dessertsRecipes} from "../_recipes/desserts-recipes";
 
 import {HomeHit} from "../data/static-recipe";
 import HeaderSlide from "../components/HeaderSlide";
@@ -26,8 +27,8 @@ const Home: React.FC = () => {
   const [foodDataSlider, setFoodDataSlider] = useState<Array<HomeHit>>([]);
   // Drinks Slider
   const [drinksDataSlider, setDrinksDataSlider] = useState<Array<HomeHit>>([])
-  // dessert Slider
-  const [dessertDataSlider, setDessertDataSlider] = useState<Array<HomeHit>>([])
+  // desserts Slider
+  const [dessertsDataSlider, setDessertsDataSlider] = useState<Array<HomeHit>>([])
 
   const foodCategoryHandler = (selectedCategory: string) => {
     console.log(selectedCategory);
@@ -56,6 +57,17 @@ const Home: React.FC = () => {
     }
   }
 
+  const dessertsCategoryHandler = (selectedCategory: string) => {
+    console.log(selectedCategory);
+    switch (selectedCategory.toLowerCase()) {
+      case 'banana cake': setDessertsDataSlider(dessertsRecipes.banana_cake.hits); break;
+      case 'brownies': setDessertsDataSlider(dessertsRecipes.brownies.hits); break;
+      case 'pancake': setDessertsDataSlider(dessertsRecipes.pancake.hits); break;
+      case 'pudding': setDessertsDataSlider(dessertsRecipes.pudding.hits); break;
+      default: setDessertsDataSlider(dessertsRecipes.banana_cake.hits); break;
+    }
+  }
+
   const goToRecipeHandler = (href: string) => {
     // console.log(href);  // Raw URL to JSON
     const id = href.split('?')[0].split('/')[6];
@@ -66,6 +78,7 @@ const Home: React.FC = () => {
   useEffect(() => {
     setFoodDataSlider(foodRecipes.chicken.hits);
     setDrinksDataSlider(drinksRecipes.boba.hits);
+    setDessertsDataSlider(dessertsRecipes.banana_cake.hits);
   }, []);
 // splash screen - login page - homepage
   return (
@@ -89,7 +102,6 @@ const Home: React.FC = () => {
         <HeaderSlide
           slideHeader={foodHeader}
           setCategory={foodCategoryHandler}/>
-
         <DataSlider
           slideData={foodDataSlider}
           goToRecipe={goToRecipeHandler}/>
@@ -98,13 +110,17 @@ const Home: React.FC = () => {
         <HeaderSlide
           slideHeader={drinksHeader}
           setCategory={drinksCategoryHandler}/>
-
         <DataSlider
           slideData={drinksDataSlider}
         goToRecipe={goToRecipeHandler}/>
 
-
-
+        <h3>Desserts</h3>
+        <HeaderSlide
+          slideHeader={dessertsHeader}
+          setCategory={dessertsCategoryHandler}/>
+        <DataSlider
+          slideData={dessertsDataSlider}
+          goToRecipe={goToRecipeHandler}/>
 
         <br/><br/>
 
