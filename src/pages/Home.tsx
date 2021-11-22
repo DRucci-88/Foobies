@@ -122,8 +122,6 @@ const Home: React.FC = () => {
           slideData={dessertsDataSlider}
           goToRecipe={goToRecipeHandler}/>
 
-        <br/><br/>
-
       </IonContent>
     </IonPage>
   );

@@ -11,11 +11,11 @@ ion-tab-bar {
     box-shadow: 10px 10px 6px rgba(3, 96, 255, 0.4);
     border-radius: 50px !important;
 
-    height: 50px;
+    height: 40px;
     width: 60%;
     padding: 5px 10px;
 
-    bottom: 20px;
+    bottom: 10px;
     position: relative;
     margin: 0 auto !important;
     border-top: none;
