@@ -82,23 +82,23 @@ const Home: React.FC = () => {
   }, []);
 // splash screen - login page - homepage
   return (
-    <IonPage>
+    <IonPage className={homeStyle.topbar}>
 
       <AppBar title={'Home Page'} backButton={false}/>
 
-      <IonContent fullscreen>
-
-        <IonGrid>
+      <IonContent>
+        <div className={homeStyle.topHeader}>
+        <IonGrid >
           <IonRow>
             <IonCol>
-              <div className={homeStyle.search} onClick={() => history.push('/search')}>
+              <div  className={homeStyle.search}onClick={() => history.push('/search')} >
                 <IonSearchbar placeholder={'I am hungry'}/>
               </div>
             </IonCol>
           </IonRow>
         </IonGrid>
 
-        <h3>Food</h3>
+        <h3 className={homeStyle.title}>Food</h3>
         <HeaderSlide
           slideHeader={foodHeader}
           setCategory={foodCategoryHandler}/>
@@ -106,7 +106,7 @@ const Home: React.FC = () => {
           slideData={foodDataSlider}
           goToRecipe={goToRecipeHandler}/>
 
-        <h3>Drinks</h3>
+        <h3 className={homeStyle.title}>Drinks</h3>
         <HeaderSlide
           slideHeader={drinksHeader}
           setCategory={drinksCategoryHandler}/>
@@ -114,13 +114,14 @@ const Home: React.FC = () => {
           slideData={drinksDataSlider}
           goToRecipe={goToRecipeHandler}/>
 
-        <h3>Desserts</h3>
+        <h3 className={homeStyle.title}>Desserts</h3>
         <HeaderSlide
           slideHeader={dessertsHeader}
           setCategory={dessertsCategoryHandler}/>
         <DataSlider
           slideData={dessertsDataSlider}
           goToRecipe={goToRecipeHandler}/>
+        </div>
 
       </IonContent>
     </IonPage>
