@@ -16,7 +16,7 @@ const AppBar: React.FC<{
         )}
         <IonTitle>
           {props.title}
-          <p className={'ion-no-margin'}>Name </p>
+          <p className={'ion-no-margin'}>Chef </p>
         </IonTitle>
 
         <IonButtons slot={'end'}>

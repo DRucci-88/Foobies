@@ -109,7 +109,7 @@
     {
       "recipe": {
         "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_4f7e09f93a1027766ddd442118d1c139",
-        "label": "Easy 30-Minute Red Lentil Soup With Curry Yogurt Recipe",
+        "label": "Red Lentil Soup Curry Yogurt",
         "image": "https://www.edamam.com/web-img/366/36658dea8ca9ecfa137e431616a7cadb.jpg",
         "source": "Serious Eats",
         "url": "http://www.seriouseats.com/recipes/2014/01/easy-30-minute-red-lentil-soup-curry-yogurt-recipe.html",
@@ -126,7 +126,7 @@
     {
       "recipe": {
         "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_113e56c60af4021d623d263c6e3dedb2",
-        "label": "Broiled spicy chicken with herbed potatoes and pearl onions",
+        "label": "Broiled spicy chicken herbed ",
         "image": "https://www.edamam.com/web-img/d8e/d8efb16fe3bed678ffea15ffe0335aea.jpg",
         "source": "casaveneracion.com",
         "url": "https://casaveneracion.com/broiled-spicy-chicken-with-herbed-potatoes-and-pearl-onions/",
@@ -143,7 +143,7 @@
     {
       "recipe": {
         "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_122abbc9b2672f7422af649cfa97516a",
-        "label": "Cream Cheese Salmon Spread recipes",
+        "label": "Cream Cheese Salmon Spread",
         "image": "https://www.edamam.com/web-img/c72/c7208e318ce66fb7d53a8db4cd78b0dc",
         "source": "cdkitchen.com",
         "url": "http://www.cdkitchen.com/recipes/recs/920/CreamCheeseSalmonSpread69543.shtml",
@@ -160,7 +160,7 @@
     {
       "recipe": {
         "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_96c181ccdcb607ef73ebd85f8b214737",
-        "label": "Portuguese Chicken with Potato Salad recipes",
+        "label": "Portuguese Chicken Salad ",
         "image": "https://www.edamam.com/web-img/80e/80e21f603499754d5dd966188fa57320",
         "source": "goodchefbadchef.com.au",
         "url": "http://www.goodchefbadchef.com.au/recipe/portuguese-chicken-with-potato-salad/",
@@ -177,7 +177,7 @@
     {
       "recipe": {
         "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_92596dbe519d7b834d9447e0eae58a9d",
-        "label": "Sake Steamed Chicken With Ginger And Scallions",
+        "label": "Sake Steamed Chicken",
         "image": "https://www.edamam.com/web-img/cfd/cfd8e84a3353bbca7244a55119367093.jpg",
         "source": "framedcooks.com",
         "url": "http://www.framedcooks.com/2011/11/sake-steamed-chicken-with-ginger-and.html",
@@ -262,7 +262,7 @@
     {
       "recipe": {
         "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_cb7fe8d548a359787f1bba6ccf85184e",
-        "label": "Enoki Mushroom Egg And Lemon Soup With Savory Baked Tofu Recipe",
+        "label": "Enoki Mushroom Egg And Lemon Soup",
         "image": "https://www.edamam.com/web-img/22e/22ea6e61c0d196bb1d5aeefe911c7c98.jpg",
         "source": "Group Recipes",
         "url": "http://www.grouprecipes.com/42654/enoki-mushroom-egg-and-lemon-soup-with-savory-baked-tofu.html",

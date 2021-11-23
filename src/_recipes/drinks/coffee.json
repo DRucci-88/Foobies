@@ -41,7 +41,7 @@
     {
       "recipe": {
         "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_51de8c7f0881126a1254368188ef9724",
-        "label": "Sweet Potato, Caramel and Chocolate Tiramisu Cake recipes",
+        "label": "Caramel Chocolate Tiramisu",
         "image": "https://www.edamam.com/web-img/37a/37a2765730389233b6638060aa2f40bb",
         "source": "mummymade.it",
         "url": "http://mummymade.it/2016/04/sweet-potato-caramel-and-chocolate-tiramisu-cake.html",
@@ -92,7 +92,7 @@
     {
       "recipe": {
         "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_4b750a2d092a2bef665087d3bca75ee4",
-        "label": "Homemade Coffee Creamers: Caramel Coffee Creamer",
+        "label": "Homemade Coffee Creamers: Caramel Coffee",
         "image": "https://www.edamam.com/web-img/320/32022c912232f3fff12eaf347099eb56.jpg",
         "source": "deliciouslyorganic.net",
         "url": "http://deliciouslyorganic.net/caramel-coffee-creamer-and-honey-vanilla-coffee-creamer-recipe/",
@@ -109,7 +109,7 @@
     {
       "recipe": {
         "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_89d9cd71222a3850ad3913172ef7eb96",
-        "label": "Gluten Free Sweet Potato Black Bean Brownies",
+        "label": "Gluten Free Sweet Potato Brownies",
         "image": "https://www.edamam.com/web-img/1d9/1d9b9cdb4aeff5ace3a1f1e3cae211ec.jpeg",
         "source": "shelovesbiscotti.com",
         "url": "https://www.shelovesbiscotti.com/gluten-free-sweet-potato-black-bean-brownies",

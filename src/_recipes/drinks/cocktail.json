@@ -126,7 +126,7 @@
     {
       "recipe": {
         "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_10d59842f5020a07d14d010bb20c8bda",
-        "label": "Prawn Cocktails with Smoky Mayonnaise",
+        "label": "Prawn Cocktails Mayonnaise ",
         "image": "https://www.edamam.com/web-img/9c0/9c0ec20c094e8756a979f2c6597eb60e.jpg",
         "source": "easysnackstomake.net",
         "url": "http://www.easysnackstomake.net/easy-appetizers/prawn-cocktails/",
@@ -194,7 +194,7 @@
     {
       "recipe": {
         "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_6022d01924484c40ad0ad5f9f1693292",
-        "label": "Ginger Melon Ball Smoothie (Low Carb)",
+        "label": "Ginger Melon Ball Smoothie",
         "image": "https://www.edamam.com/web-img/155/155b95bba783e7c53d39ae6e8be81dc1.jpg",
         "source": "BigOven",
         "url": "http://www.bigoven.com/recipe/Ginger-Melon-Ball-Smoothie-(Low-Carb)/174380",

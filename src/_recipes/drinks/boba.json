@@ -24,7 +24,7 @@
     {
       "recipe": {
         "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_f48ac30817edb1ae7d7f6824479098e6",
-        "label": "Coconut Almond Milk Tea Smoothies with Boba recipes",
+        "label": "Coconut Almond Milk Tea ",
         "image": "https://www.edamam.com/web-img/407/4070c9265548db0325bd301620376218",
         "source": "The Little Kitchen",
         "url": "http://www.thelittlekitchen.net/coconut-almond-milk-tea-smoothies/",
@@ -41,7 +41,7 @@
     {
       "recipe": {
         "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_e63498d9570ba1d5e6aeb1589b3f6f93",
-        "label": "Boba Fettucine",
+        "label": "Easy Boba Fettucine ",
         "image": "https://www.edamam.com/web-img/cc2/cc2f91f624251c224d6f61053dc8d71e.jpg",
         "source": "mealplannerpro.com",
         "url": "https://mealplannerpro.com/member-recipes/boba-fettucine-748341",
@@ -58,7 +58,7 @@
     {
       "recipe": {
         "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_45de06e82e8bd20a5cdc372b2df28335",
-        "label": "Strawberry Boba",
+        "label": " Fresh Strawberry Boba",
         "image": "https://www.edamam.com/web-img/b47/b47316c66a5f7f07eefc53447a96785f.jpg",
         "source": "Food52",
         "url": "https://food52.com/recipes/83200-strawberry-bubble-tea-recipe",
@@ -75,7 +75,7 @@
     {
       "recipe": {
         "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_0fac0c348026281ddae5f2e045a955e6",
-        "label": "Witch's Brew",
+        "label": "Witch's Brew Recipe",
         "image": "https://www.edamam.com/web-img/e36/e36daf70b8ac7f3e96fe8998d93ef391.jpg",
         "source": "Food52",
         "url": "https://food52.com/recipes/38904-witch-s-brew",
@@ -109,7 +109,7 @@
     {
       "recipe": {
         "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_2d9e0d7e00b56894a63b4e5734546c75",
-        "label": "Banana coconut tapioca puddings (che chuoi)",
+        "label": "Banana coconut puddings",
         "image": "https://www.edamam.com/web-img/cee/cee99bead4f3543e07c78e2e880a5d0d.jpeg",
         "source": "taste.com.au",
         "url": "https://www.taste.com.au/recipes/banana-coconut-tapioca-puddings-che-chuoi/11a2af5a-925e-4491-b4bd-fb931a0487d8",
@@ -126,7 +126,7 @@
     {
       "recipe": {
         "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_34f38df4df1cb1b994d5a16fe17109d7",
-        "label": "Homemade Brown Sugar Bubble Tea",
+        "label": "Brown Sugar Bubble Tea",
         "image": "https://www.edamam.com/web-img/7f5/7f56d67f61af578d3e9c242f0535efc8",
         "source": "Allrecipes",
         "url": "https://www.allrecipes.com/recipe/279335/homemade-brown-sugar-bubble-tea/",
@@ -143,7 +143,7 @@
     {
       "recipe": {
         "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_3e32a68851ee46fd7ca881d105ee0033",
-        "label": "Pumpkin Spice Bubble Tea with Boba recipes",
+        "label": "Pumpkin Spice Bubble Tea",
         "image": "https://www.edamam.com/web-img/77e/77e1239d9cfa58e21fc1fb90b4186a59",
         "source": "honestlyyum.com",
         "url": "http://honestlyyum.com/14737/pumpkin-spice-bubble-tea-with-boba/",
@@ -194,7 +194,7 @@
     {
       "recipe": {
         "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_c1481808f80b194419395e0e411b1779",
-        "label": "Coconut Vanilla Boba (bubble Tea) recipes",
+        "label": "Coconut Vanilla Boba recipes",
         "image": "https://www.edamam.com/web-img/bd1/bd1b332dd7b3253b0d66c648bc9a81c0",
         "source": "savorytooth.com",
         "url": "http://www.savorytooth.com/coconut-vanilla-boba-bubble-tea/",
@@ -262,7 +262,7 @@
     {
       "recipe": {
         "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_23cc91f952fdbb41fe175c2da76266e1",
-        "label": "Strawberry Green Tea with Boba recipes",
+        "label": "Strawberry Green Tea Boba",
         "image": "https://www.edamam.com/web-img/240/240be523e644f170e0234666cf2dc985",
         "source": "rasamalaysia.com",
         "url": "http://rasamalaysia.com/strawberry-green-tea/",
@@ -296,7 +296,7 @@
     {
       "recipe": {
         "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_c0e2f1916cbc5d657d2db7fe996ed8f0",
-        "label": "LaRaine's Whole Wheat and Oat Pancakes",
+        "label": "LaRaine's Oat Pancakes",
         "image": "https://www.edamam.com/web-img/9ad/9ad9a8394c6c90b7d413e594a49966b9.jpg",
         "source": "recipes.sparkpeople.com",
         "url": "https://recipes.sparkpeople.com/recipe-detail.asp?recipe=54052",

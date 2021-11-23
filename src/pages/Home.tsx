@@ -80,6 +80,7 @@ const Home: React.FC = () => {
     setDrinksDataSlider(drinksRecipes.boba.hits);
     setDessertsDataSlider(dessertsRecipes.banana_cake.hits);
   }, []);
+
 // splash screen - login page - homepage
   return (
     <IonPage className={homeStyle.topbar}>
