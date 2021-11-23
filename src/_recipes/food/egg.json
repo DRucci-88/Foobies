@@ -12,7 +12,7 @@
     {
       "recipe": {
         "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_db742742099859a8053b992dd3c1f452",
-        "label": "The Crispy Egg",
+        "label": "Crispy Egg Recipe",
         "image": "https://www.edamam.com/web-img/16c/16c9f7a2bcf8a7643ada8729cd693c9d.jpg",
         "source": "Smitten Kitchen",
         "url": "http://smittenkitchen.com/blog/2014/10/the-crispy-egg/",
@@ -29,7 +29,7 @@
     {
       "recipe": {
         "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_b958fb2af215767c51d7545e2f86a722",
-        "label": "Egg Noodle",
+        "label": "Egg Noodle Recipe",
         "image": "https://www.edamam.com/web-img/a7b/a7bb703b87a4c3c4fd7beb8d5000f2e2.jpg",
         "source": "Epicurious",
         "url": "https://www.epicurious.com/recipes/food/views/egg-noodle-351712",
@@ -45,7 +45,7 @@
     {
       "recipe": {
         "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_933bb646e98e78fd55259e9c743a93cc",
-        "label": "Egg Sandwich",
+        "label": "Egg Sandwich Recipe",
         "image": "https://www.edamam.com/web-img/4f3/4f37381ccbd1baec9281403d03555e53.jpg",
         "source": "Martha Stewart",
         "url": "https://www.marthastewart.com/1090477/egg-sandwich",
@@ -79,7 +79,7 @@
     {
       "recipe": {
         "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_ea8b5e0d9c1d62bc53116eb4f3979f9a",
-        "label": "Mexican egg roll",
+        "label": "Mexican egg roll Recipe",
         "image": "https://www.edamam.com/web-img/693/6934debd72a9668d372e2d0fc778d507.jpg",
         "source": "BBC Good Food",
         "url": "https://www.bbcgoodfood.com/recipes/mexican-egg-roll",
@@ -113,7 +113,7 @@
     {
       "recipe": {
         "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_555ecd7b216b8fa941384415a8053d61",
-        "label": "Egg Pancakes",
+        "label": "Egg Pancakes Recipe",
         "image": "https://www.edamam.com/web-img/e54/e5458b2969f07a9315a474fc842f035c.jpg",
         "source": "Food52",
         "url": "https://food52.com/recipes/14283-egg-pancakes",
@@ -130,7 +130,7 @@
     {
       "recipe": {
         "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_0c8da64b3a0005796969d1120b957dab",
-        "label": "Egg-In-A-Hole",
+        "label": "Egg-In-A-Hole Recipe",
         "image": "https://www.edamam.com/web-img/248/248e340f6e7f3294d6740a859f829333.jpg",
         "source": "Pioneer Woman",
         "url": "http://thepioneerwoman.com/cooking/2008/07/egg-in-a-hole-see-alternate-names-below/",
@@ -147,7 +147,7 @@
     {
       "recipe": {
         "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_b6965e7f8e815e4e69d75ef773cda095",
-        "label": "Ham And Egg Sandwich",
+        "label": "Ham & Egg Sandwich",
         "image": "https://www.edamam.com/web-img/f44/f442fc82496936b32678180c0d856f7b.jpg",
         "source": "Saveur",
         "url": "http://www.saveur.com/article/Recipes/Ham-and-Egg-Sandwich",
@@ -164,7 +164,7 @@
     {
       "recipe": {
         "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_28664c133d643eb823a52870f021e16d",
-        "label": "Cured Egg Yolks recipes",
+        "label": "Cured Egg Yolks Recipe",
         "image": "https://www.edamam.com/web-img/cb6/cb6e819c4d43299ad77a7219042cdb32",
         "source": "Bon Appetit",
         "url": "http://www.bonappetit.com/recipe/cured-egg-yolks",
@@ -231,7 +231,7 @@
     {
       "recipe": {
         "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_a82cfd564d2c8ee62cfe834722b73f7d",
-        "label": "Egg Nog",
+        "label": " Easy Egg Nog Recipe",
         "image": "https://www.edamam.com/web-img/a06/a06a9c8a518266a283b808602a18c600.jpg",
         "source": "Cookstr",
         "url": "http://www.cookstr.com/recipes/egg-nog",
@@ -248,7 +248,7 @@
     {
       "recipe": {
         "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_58bf6b85a0a5b3692c59ae5f31a5ee74",
-        "label": "Egg On Toast",
+        "label": "Egg Toast Recipe",
         "image": "https://www.edamam.com/web-img/901/901f38d369672e8fef122ccd0f6051d0.jpg",
         "source": "Self",
         "url": "http://www.self.com/challenge/2011/nutrition/recipe/breakfasts/egg-on-toast",
@@ -299,7 +299,7 @@
     {
       "recipe": {
         "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_1d8858a3b279938afd4d46e980b0bb2a",
-        "label": "Egg Nog",
+        "label": "Egg Nog Recipe",
         "image": "https://www.edamam.com/web-img/ac5/ac5c76e6712473aabac824a893745a64.jpeg",
         "source": "Food Network",
         "url": "https://www.foodnetwork.com/recipes/egg-nog-recipe-1957153",
@@ -333,7 +333,7 @@
     {
       "recipe": {
         "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_1c85e2f142f8f06a37d02655ffdb561a",
-        "label": "Egg Dosa ( Sourdough Crepes with Egg)",
+        "label": "Sourdough Crepes Egg",
         "image": "https://www.edamam.com/web-img/00b/00b9877b43bbdf72195f2b43466335de.JPG",
         "source": "Food52",
         "url": "https://food52.com/recipes/1804-egg-dosa-sourdough-crepes-with-egg",

@@ -2,6 +2,7 @@ import { Redirect, Route } from 'react-router-dom';
 import {IonApp, IonIcon, IonLabel, IonRouterOutlet, IonTabBar, IonTabButton, IonTabs} from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
 import Home from './pages/Home';
+import SwitchTabBar from './components/SwitchBar';
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -28,38 +29,13 @@ import Recipe from "./pages/Recipe";
 import Profile from "./pages/Profile";
 import Search from "./pages/Search";
 
-const App: React.FC = () => (
+const App: React.FC = () => {
+  return(
+
   <IonApp>
-    <IonReactRouter>
-      <IonTabs>
-
-        <IonRouterOutlet>
-          <Route exact path="/home" component={Home}/>
-          <Route exact path={'/recipe/:id'} component={Recipe}/>
-          <Route exact path={'/profile'} component={Profile}/>
-          <Route exact path={'/search'} component={Search}/>
-          <Redirect exact path={'/'} to={'/home'}/>
-        </IonRouterOutlet>
-
-        <IonTabBar slot={'bottom'}>
-          <IonTabButton tab={'home'} href={'/home'} >
-            Home <IonIcon icon={home}/>
-          </IonTabButton>
-          <IonTabButton tab={'cook'}>
-            cook <IonIcon icon={restaurant}/>
-          </IonTabButton>
-          <IonTabButton tab={'health'}>
-            Health<IonIcon icon={medkit}/>
-          </IonTabButton>
-          <IonTabButton tab={'profile'} href={'/profile'} >
-            Profile <IonIcon icon={person}/>
-          </IonTabButton>
-        </IonTabBar>
-
-      </IonTabs>
-
-    </IonReactRouter>
+    <SwitchTabBar />
   </IonApp>
 );
+}
 
 export default App;

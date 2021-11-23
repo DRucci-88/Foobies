@@ -39,7 +39,7 @@
         {
             "recipe": {
                 "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_9cf7d34f416848b94c71ac6eafa0a555",
-                "label": "Chicken and Broccoli Detox Soup recipes",
+                "label": "Chicken Broccoli Soup",
                 "image": "https://www.edamam.com/web-img/a95/a95071ef0daa576b0f444fe474556b86",
                 "source": "12tomatoes.com",
                 "url": "http://12tomatoes.com/chicken-detox-soup/",
@@ -71,7 +71,7 @@
         {
             "recipe": {
                 "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_fbcc68bd3b1980f3dec24fb8c8cb44cf",
-                "label": "Ritz Chicken Strips With A Spiced Mango Dipping Sauce",
+                "label": "Chicken Strips Mango",
                 "image": "https://www.edamam.com/web-img/3c6/3c60f27e9d3bd7ff974233c4c51a8c3a.jpg",
                 "source": "Foodista",
                 "url": "http://www.foodista.com/recipe/WYQV6NNY/ritz-chicken-strips-with-a-spiced-mango-dipping-sauce",
@@ -88,7 +88,7 @@
         {
             "recipe": {
                 "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_bd815882f96d7f4f010cc2b3b7913c2e",
-                "label": "Grilled Chicken with Cantaloupe Salsa",
+                "label": "Grilled Chicken recipe",
                 "image": "https://www.edamam.com/web-img/7d1/7d1d22550967d71a7a10a235b767d1c4.jpg",
                 "source": "tablespoon.com",
                 "url": "https://www.tablespoon.com/recipes/grilled-chicken-with-cantaloupe-salsa/0221bc5e-f9b6-4a31-8a9b-f42baa2f2777",
@@ -105,7 +105,7 @@
         {
             "recipe": {
                 "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_02829f09bf3d5e9e96b6b9d7193f47a9",
-                "label": "Chicken Crunchy Chow Mein",
+                "label": "Chicken Chow Mein",
                 "image": "https://www.edamam.com/web-img/e90/e9081884b68ef8a992b6f5149c222902.jpg",
                 "source": "memorabledishes.com",
                 "url": "http://www.memorabledishes.com/tag/healthy-chow-mein/",
@@ -122,7 +122,7 @@
         {
             "recipe": {
                 "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_78e4b83e2ef80e8be0f2808a99c4f9d0",
-                "label": "Asian Shrimp Bisque with Shrimp Toast Recipe",
+                "label": "Asian Shrimp Bisque ",
                 "image": "https://www.edamam.com/web-img/040/040eeb1bce83199073b9e9a27c3ceb35.JPG",
                 "source": "Group Recipes",
                 "url": "http://www.grouprecipes.com/111421/asian-shrimp-bisque-with-shrimp-toast.html",
@@ -139,7 +139,7 @@
         {
             "recipe": {
                 "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_691c29d7a6b58324c23062fbed6c5d22",
-                "label": "Parmesan Tomatoes Recipe 5",
+                "label": "Parmesan Tomatoes   ",
                 "image": "https://www.edamam.com/web-img/146/146765f55ae36ee87946505b7f2fab35.jpg",
                 "source": "Taste of Home",
                 "url": "http://www.tasteofhome.com/recipes/parmesan-tomato",
@@ -156,7 +156,7 @@
         {
             "recipe": {
                 "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_66ec0b42c066faf146869d735bbb975b",
-                "label": "Shish Tawook: Secret Recipe Club",
+                "label": "Shish Tawook recipe",
                 "image": "https://www.edamam.com/web-img/5fa/5fa39477d633193bc645880e9f9ca58d.jpg",
                 "source": "cookingmimi.com",
                 "url": "https://www.cookingmimi.com/shish-tawook/",
@@ -173,7 +173,7 @@
         {
             "recipe": {
                 "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_591a36b23b011806992f6a81f136c376",
-                "label": "Grilled Sesame Chicken Lettuce Cups",
+                "label": "Grilled Sesame Chicken",
                 "image": "https://www.edamam.com/web-img/8cf/8cf6ca72a137b2e11620d4009f2e2d07.jpeg",
                 "source": "Food Network",
                 "url": "https://www.foodnetwork.com/recipes/food-network-kitchen/grilled-sesame-chicken-lettuce-cups-3562034",
@@ -207,7 +207,7 @@
         {
             "recipe": {
                 "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_2cae03917599d675643a7cc0cae15112",
-                "label": "Hungry Man's Baked Chicken",
+                "label": "Baked Chicken recipe",
                 "image": "https://www.edamam.com/web-img/eee/eeea994ec882208b126cb5ffdc2e117b.jpg",
                 "source": "Allrecipes",
                 "url": "http://allrecipes.com/Recipe/Hungry-Mans-Baked-Chicken/Detail.aspx",
@@ -241,7 +241,7 @@
         {
             "recipe": {
                 "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_fee98e6a7cbb1fd54366dd0efee52823",
-                "label": "Pomegranate-Glazed Pork Skewers with Dill-Onion Marinade",
+                "label": "Pomegranate-Glazed Pork ",
                 "image": "https://www.edamam.com/web-img/5c5/5c50e2944ff510e4436e4225da7716b4.jpg",
                 "source": "My Recipes",
                 "url": "http://www.myrecipes.com/recipe/pomegranate-glazed-pork-skewers-dill-onion-marinade",
@@ -258,7 +258,7 @@
         {
             "recipe": {
                 "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_1b436371c0542772bb632b7039fe4562",
-                "label": "Greek Style Chicken & Potatoes",
+                "label": "Greek Style Chicken",
                 "image": "https://www.edamam.com/web-img/6fc/6fccc5a27f478fd05e0c231aba148ec9.jpg",
                 "source": "wenderly.com",
                 "url": "http://wenderly.com/greek-style-chicken-potatoes/?share=stumbleupon",
@@ -292,7 +292,7 @@
         {
             "recipe": {
                 "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_4bf81da3885d2f2399d0e7be1691c091",
-                "label": "Byerly's Wild Rice Soup",
+                "label": "Byerly's Rice Soup",
                 "image": "https://www.edamam.com/web-img/c4e/c4e255e87ac59a246a032264ee5d11f9.jpg",
                 "source": "food.com",
                 "url": "http://www.food.com/recipe/byerlys-wild-rice-soup-178083",
@@ -309,7 +309,7 @@
         {
             "recipe": {
                 "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_769528377e6deb5f509170cd26b44592",
-                "label": "One Pot Lemon Thyme Chicken Breasts recipes",
+                "label": "Chicken Breasts recipes",
                 "image": "https://www.edamam.com/web-img/442/44206bc5563d440de76afaaaa7608c11",
                 "source": "shelovesbiscotti.com",
                 "url": "http://www.shelovesbiscotti.com/easy-one-pot-lemon-thyme-chicken-breasts/",
@@ -326,7 +326,7 @@
         {
             "recipe": {
                 "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_7f35531c90915f4241ff1f4b72fcbe3f",
-                "label": "Orzo Primavera",
+                "label": "Orzo Primavera recipe",
                 "image": "https://www.edamam.com/web-img/4f1/4f154690f667ea620e4c81ec19d37365.jpg",
                 "source": "recipes.sparkpeople.com",
                 "url": "https://recipes.sparkpeople.com/recipe-detail.asp?recipe=1462454",

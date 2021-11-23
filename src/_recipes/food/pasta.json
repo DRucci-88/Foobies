@@ -7,7 +7,7 @@
     {
       "recipe": {
         "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_70519478fe5f13c1bed135327a2e8f81",
-        "label": "Gemelli Pasta with Roasted Pumpkin and Pancetta",
+        "label": "Gemelli Pasta Recipe",
         "image": "https://www.edamam.com/web-img/515/5159e6afa4a4d343f9aa449093ea1050",
         "source": "Allrecipes",
         "url": "https://www.allrecipes.com/recipe/276904/gemelli-pasta-with-roasted-pumpkin-and-pancetta/",
@@ -24,7 +24,7 @@
     {
       "recipe": {
         "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_e99a963f7720900573b309ac0c68d510",
-        "label": "Super Simple Nacho Pasta",
+        "label": "Simple Nacho Pasta",
         "image": "https://www.edamam.com/web-img/fc1/fc14420b15e8aadee07de560e0e57ae9.jpg",
         "source": "campbells.com",
         "url": "https://www.campbells.com/kitchen/recipes/super-simple-nacho-pasta/",
@@ -41,7 +41,7 @@
     {
       "recipe": {
         "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_db1878d53f4521556b730bc0b2243c39",
-        "label": "Spaghetti And Meatball Soup",
+        "label": "Spaghetti & Meatball Soup",
         "image": "https://www.edamam.com/web-img/4f9/4f9792c9f50512e2200fff3857e87618.jpg",
         "source": "Betty Crocker",
         "url": "http://www.bettycrocker.com/recipes/spaghetti-and-meatball-soup/ada35d7c-0568-4bba-94ee-4e893258b710",
@@ -92,7 +92,7 @@
     {
       "recipe": {
         "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_7254ff565c42634374f90bb2d5fc75bd",
-        "label": "Skillet Baked Pasta With Sausage, Spinach And Sage",
+        "label": "Skillet Baked Pasta ",
         "image": "https://www.edamam.com/web-img/2a9/2a9cb2b97b7c9bec4b21db0ce583133a.jpg",
         "source": "Foodista",
         "url": "https://www.foodista.com/recipe/JN8JK4M7/skillet-baked-pasta-with-sausage-spinach-and-sage",
@@ -109,7 +109,7 @@
     {
       "recipe": {
         "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_da59e1d60bc72ca5069a7a1b9882cca1",
-        "label": "Fusilli pasta with lamb ragu from Molise",
+        "label": "Fusilli pasta lamb",
         "image": "https://www.edamam.com/web-img/dc8/dc8fc52fb6ae78621f616c1bbe1e1990.jpg",
         "source": "the-pasta-project.com",
         "url": "https://www.the-pasta-project.com/fusilli-pasta-with-lamb-ragu-from-molise/2/",
@@ -126,7 +126,7 @@
     {
       "recipe": {
         "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_e35bc6e79439fa87ab5f9876cbdd22bf",
-        "label": "Gluten-Free Fiesta Pasta Salad",
+        "label": "Fiesta Pasta Salad",
         "image": "https://www.edamam.com/web-img/c41/c41b968b494330ecbf6d514b9fbaed1f.jpg",
         "source": "The Daily Meal",
         "url": "http://www.thedailymeal.com/gluten-free-fiesta-pasta-salad-recipe",
@@ -143,7 +143,7 @@
     {
       "recipe": {
         "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_05f01a26e0ee18d81d302f5a6af9930b",
-        "label": "Stovetop Macaroni and Cheese",
+        "label": "Stovetop Mac & Cheese",
         "image": "https://www.edamam.com/web-img/dcc/dcc3049c059c38272456c9f2d3d48d13.jpg",
         "source": "tastykitchen.com",
         "url": "https://tastykitchen.com/recipes/main-courses/stovetop-macaroni-and-cheese/",
@@ -160,7 +160,7 @@
     {
       "recipe": {
         "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_19374c32f5570487e5713fd766b6ade0",
-        "label": "Bow-Tie Pasta Salad",
+        "label": "BowTie Pasta Salad",
         "image": "https://www.edamam.com/web-img/941/941682ed5fdd35e6edf18b8b359bbb20.jpg",
         "source": "Allrecipes",
         "url": "https://www.allrecipes.com/recipe/220413/bow-tie-pasta-salad/",
@@ -194,7 +194,7 @@
     {
       "recipe": {
         "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_c8eba08dd06f97a1233b5c292542b8a3",
-        "label": "Pasta Dough",
+        "label": "Pasta Dough Recipe",
         "image": "https://www.edamam.com/web-img/f27/f2739398afe343b1b5e97ffa5aaea380.jpg",
         "source": "food.com",
         "url": "http://www.food.com/recipe/pasta-dough-71623",
@@ -211,7 +211,7 @@
     {
       "recipe": {
         "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_4c97598257130c6b2639044919cbaab9",
-        "label": "Oil Free Pesto w/ Basil & Avocado",
+        "label": "Oil Free Pesto Recipe",
         "image": "https://www.edamam.com/web-img/a7b/a7bf5efcd5219b7549a6fda5ce9504f6.jpg",
         "source": "Foodista",
         "url": "http://www.foodista.com/recipe/GYVS8LP3/oil-free-pesto-w-basil-avocado",
@@ -228,7 +228,7 @@
     {
       "recipe": {
         "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_5d500770e84f32a17677c56927a34742",
-        "label": "Bright 'N Zesty Mac N Cheese",
+        "label": "Zesty Mac N Cheese",
         "image": "https://www.edamam.com/web-img/761/761b9c92511afbc28ad9cf4dfb92807b.jpg",
         "source": "Food52",
         "url": "http://food52.com/recipes/22758-bright-n-zesty-mac-n-cheese",
@@ -245,7 +245,7 @@
     {
       "recipe": {
         "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_0a1a90b741ab816574fc941faf68cc01",
-        "label": "Fried Mac and Cheese Balls recipes",
+        "label": "Fried Mac Cheese Balls",
         "image": "https://www.edamam.com/web-img/b86/b8625bf2c4081ac828970aeb29a0f73c",
         "source": "spoonandsage.com",
         "url": "http://www.spoonandsage.com/2015/08/15/fried-mac-and-cheese-balls/",
@@ -262,7 +262,7 @@
     {
       "recipe": {
         "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_43d8e1a453c046c0f05dec3c874c2a62",
-        "label": "One Skillet Chili Mac with Cheese",
+        "label": "Chili Mac N Cheese",
         "image": "https://www.edamam.com/web-img/a4d/a4d8d4cdbbcbe432cd4a1d4c7105edd8.jpg",
         "source": "myfindsonline.com",
         "url": "http://myfindsonline.com/chili-mac-with-cheese/",
@@ -279,7 +279,7 @@
     {
       "recipe": {
         "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_160de987d6156417bfe14c6ec900d9cd",
-        "label": "Spicy Creamy Pasta With Shrimp",
+        "label": "Spicy Creamy Pasta",
         "image": "https://www.edamam.com/web-img/011/0119cef16bbb7f4b29cb934b5d66ec25.jpg",
         "source": "food.com",
         "url": "http://www.food.com/recipe/spicy-creamy-pasta-with-shrimp-201278",
@@ -296,7 +296,7 @@
     {
       "recipe": {
         "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_556c8c1bbd8d7ed06fe8a54507b60402",
-        "label": "Creamy Pasta with Peas and Asparagus",
+        "label": "Creamy Pasta Asparagus",
         "image": "https://www.edamam.com/web-img/24b/24b6f729fb4e796f85a7cab5f679c086.jpg",
         "source": "smellofrosemary.com",
         "url": "http://www.smellofrosemary.com/2017/04/28/creamy-pasta-with-peas-and-asparagus/",
@@ -313,7 +313,7 @@
     {
       "recipe": {
         "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_4f0bd60c030035469e46c4acc984db91",
-        "label": "Creamy Olive Chicken Bake With Red Peppers and Mushrooms Recipe",
+        "label": "Creamy Olive Recipe",
         "image": "https://www.edamam.com/web-img/644/644c9313ad8f764da109d7c9125a3d93.jpg",
         "source": "recipeofhealth.com",
         "url": "http://recipeofhealth.com/recipe/creamy-olive-chicken-bake-with-red-peppers-and-mushrooms-194811rb",
@@ -330,7 +330,7 @@
     {
       "recipe": {
         "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_5bd275c35d762c4c5fab33bb6ae5c2fd",
-        "label": "Chicken Broth with Vegetables and Pasta",
+        "label": "Chicken Broth Pasta",
         "image": "https://www.edamam.com/web-img/44c/44c6f9c09e2bb13ff6a8acd9ec66eb3f.jpg",
         "source": "eatsmarter.com",
         "url": "https://eatsmarter.com/recipes/chicken-broth-with-vegetables-and-pasta",
