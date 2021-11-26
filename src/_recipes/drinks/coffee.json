@@ -6,25 +6,8 @@
   "hits": [
     {
       "recipe": {
-        "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_9b48350c0386597ca5cb198b2bd3a724",
-        "label": "Pecan-crusted Oven-broiled Chicken Breasts",
-        "image": "https://www.edamam.com/web-img/466/466f37b81e584054432dba7f997aeb64.jpg",
-        "source": "BigOven",
-        "url": "http://www.bigoven.com/recipe/Pecan-crusted-Oven-broiled-Chicken-Breasts/177885",
-        "shareAs": "http://www.edamam.com/recipe/pecan-crusted-oven-broiled-chicken-breasts-9b48350c0386597ca5cb198b2bd3a724/coffee"
-
-      },
-      "_links": {
-        "self": {
-          "href": "https://api.edamam.com/api/recipes/v2/9b48350c0386597ca5cb198b2bd3a724?type=public&app_id=ea1d37d5&app_key=fd382a172ba8d6668c0430dc9c14a181",
-          "title": "Self"
-        }
-      }
-    },
-    {
-      "recipe": {
         "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_51b070b625c9fb39d35b151d3e45439c",
-        "label": "Mocha Cheesecake w/Chocolate Crust",
+        "label": "Mocha Cheesecake Crus",
         "image": "https://www.edamam.com/web-img/fb3/fb35a677a0030028ae19b3c61556f96a.jpg",
         "source": "fitnesshealth101.com",
         "url": "http://www.fitnesshealth101.com/recipe/dessert/mocha-cheesecake-w-chocolate-crust",
@@ -58,7 +41,7 @@
     {
       "recipe": {
         "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_19c30851eaaa723b1dd2d32aab8d0f1b",
-        "label": "Ganzie’s Biscuits",
+        "label": "Ganzie’s Biscuits Recipe",
         "image": "https://www.edamam.com/web-img/ce8/ce8dde28142c45ebb564c3b7f4a25569.jpg",
         "source": "tastykitchen.com",
         "url": "https://tastykitchen.com/recipes/breads/ganziee28099s-biscuits/",
@@ -92,7 +75,7 @@
     {
       "recipe": {
         "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_4b750a2d092a2bef665087d3bca75ee4",
-        "label": "Homemade Coffee Creamers: Caramel Coffee",
+        "label": "Homemade Coffee Creamers",
         "image": "https://www.edamam.com/web-img/320/32022c912232f3fff12eaf347099eb56.jpg",
         "source": "deliciouslyorganic.net",
         "url": "http://deliciouslyorganic.net/caramel-coffee-creamer-and-honey-vanilla-coffee-creamer-recipe/",
@@ -211,7 +194,7 @@
     {
       "recipe": {
         "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_dc1683f3f6d68d5d6c0497e27bd34ab6",
-        "label": "CraftBeer.com recipes",
+        "label": " Homemade CraftBeer recipes",
         "image": "https://www.edamam.com/web-img/0f2/0f240304ba8acf2ec0042736edde25b3",
         "source": "craftbeer.com",
         "url": "https://www.craftbeer.com/recipes/fudge-stout-brownies",
@@ -245,7 +228,7 @@
     {
       "recipe": {
         "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_0c31fcd8dac264bb7726692de0cb5841",
-        "label": "Perfect Chocolate Cake with Chocolate Fros",
+        "label": "Perfect Chocolate Cake ",
         "image": "https://www.edamam.com/web-img/4b1/4b1c44a18349dc6828cb97760fc35f42.jpg",
         "source": "chateauelma.com",
         "url": "http://www.chateauelma.com/perfect-chocolate-cake-chocolate-frosting",
@@ -313,7 +296,7 @@
     {
       "recipe": {
         "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_41380987a04eb59e8a5e76b34ef0c47f",
-        "label": "Double Layer Chocolate Cake With Mocha Icing",
+        "label": "Double Layer Chocolate Cake",
         "image": "https://www.edamam.com/web-img/14d/14d96c0af0488af0d9e2fda289d0f2ef.jpg",
         "source": "recipezaar.com",
         "url": "http://www.recipezaar.com/Double-Layer-Chocolate-Cake-With-Mocha-Icing-47465",

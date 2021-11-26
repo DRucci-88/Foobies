@@ -3,6 +3,7 @@ import {Autoplay, Pagination} from "swiper";
 import {Swiper, SwiperSlide} from "swiper/react/swiper-react";
 import {IonCard, IonCardContent, IonCardTitle, IonImg} from "@ionic/react";
 import {HomeHit} from "../data/static-recipe";
+import './HeaderSlide.css';
 
 const DataSlider: React.FC<{
   slideData: Array<HomeHit>;

@@ -2,7 +2,7 @@ import React from "react";
 import {FreeMode} from "swiper";
 import {Swiper, SwiperSlide} from "swiper/react/swiper-react";
 import {IonCard, IonCardContent, IonCardTitle} from "@ionic/react";
-
+import './HeaderSlide.css';
 const HeaderSlide: React.FC<{
   slideHeader: Array<string>;
   setCategory: (selectedCategory: string) => void;
@@ -20,7 +20,7 @@ const HeaderSlide: React.FC<{
           >
             <IonCard>
               <IonCardContent>
-                <IonCardTitle className={'title ion-text-center'}>
+                <IonCardTitle className={'category'}>
                   {header}
                 </IonCardTitle>
               </IonCardContent>

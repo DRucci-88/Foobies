@@ -11,4 +11,4 @@ export const dessertsRecipes = {
 }
 
 export const dessertsHeader =
-  ['Banana Cake', 'Brownies', 'Pancake', 'Pudding'];
+  ['Banana', 'Brownies', 'Pancake', 'Pudding'];

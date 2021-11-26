@@ -7,7 +7,7 @@
     {
       "recipe": {
         "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_0540760aaaa34074cfd41868f8c90d4e",
-        "label": "Salted Nut Roll Bars recipes",
+        "label": "Salted Nut Roll Bars",
         "image": "https://www.edamam.com/web-img/04c/04cd5cb73d9bf5325bf27992133dbc2c",
         "source": "jamiecooksitup.net",
         "url": "http://jamiecooksitup.net/2017/03/salted-nut-roll-bars/",
@@ -24,7 +24,7 @@
     {
       "recipe": {
         "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_0b0018d2082c120919877cc655c1d619",
-        "label": "Forest Cocktail",
+        "label": "Forest Cocktail Recipe",
         "image": "https://www.edamam.com/web-img/224/224c2473c5a49471a7bfa095859e555f.jpg",
         "source": "carmelberry.com",
         "url": "https://carmelberry.com/recipe/forest-cocktail/",
@@ -58,7 +58,7 @@
     {
       "recipe": {
         "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_8fd67277828aab13be6caeb8c26900f5",
-        "label": "Sparkling Rhubarb Shrub Cocktail",
+        "label": "Sparkling Cocktail",
         "image": "https://www.edamam.com/web-img/e61/e61906cddfef1f6f08d9e696ff736c7e.jpg",
         "source": "mealplannerpro.com",
         "url": "https://mealplannerpro.com/member-recipes/sparkling-rhubarb-shrub-cocktail-554101",
@@ -75,7 +75,7 @@
     {
       "recipe": {
         "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_53c24d48164898162cef8e4eb612e840",
-        "label": "Shrimp Cocktail with Vodka Sauce",
+        "label": "Shrimp Cocktail with Vodka",
         "image": "https://www.edamam.com/web-img/310/31017f4924d0882dcc4b2bc8b02125fa.jpg",
         "source": "2sistersrecipes.com",
         "url": "https://2sistersrecipes.com/shrimp-cocktail-with-vodka-sauce/",
@@ -228,7 +228,7 @@
     {
       "recipe": {
         "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_4bb6d970ba611bc3ceb4b745e5eda7dc",
-        "label": "Cocktail Sauce",
+        "label": "Cocktail Sauce Recipe",
         "image": "https://www.edamam.com/web-img/3bc/3bcc7ec20ea76dd114eaedb0016fa559.jpg",
         "source": "food.com",
         "url": "http://www.food.com/recipe/cocktail-sauce-53024",
@@ -245,7 +245,7 @@
     {
       "recipe": {
         "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_af7719ef7d8ff8083161d7609d8b6d22",
-        "label": "Cranberry Sandwich Cookies",
+        "label": "Cranberry Sandwich ",
         "image": "https://www.edamam.com/web-img/b49/b49f68ec811768854cd9c023546b4cc4.jpeg",
         "source": "Food Network",
         "url": "https://www.foodnetwork.com/recipes/food-network-kitchen/cranberry-sandwich-cookies-3363976",
@@ -279,7 +279,7 @@
     {
       "recipe": {
         "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_e7205846e2fa5006b665a2f5824e2230",
-        "label": "Kicked-Up Classic Cocktail Meatballs",
+        "label": "Classic Cocktail Meatballs",
         "image": "https://www.edamam.com/web-img/535/535f4f08a62c2fea56c68d052e939ad5.jpg",
         "source": "noblepig.com",
         "url": "https://noblepig.com/2013/12/kicked-up-classic-cocktail-meatballs",

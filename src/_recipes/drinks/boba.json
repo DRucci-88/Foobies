@@ -7,7 +7,7 @@
     {
       "recipe": {
         "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_cadbcf57bc78dfaa113765232ad8e035",
-        "label": "Taro Boba Tea",
+        "label": "Taro Boba Tea Recipe",
         "image": "https://www.edamam.com/web-img/99b/99bcf7fb7648ef49b709c5e496b193ed.jpg",
         "source": "Allrecipes",
         "url": "https://www.allrecipes.com/recipe/257914/taro-boba-tea/",
@@ -58,7 +58,7 @@
     {
       "recipe": {
         "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_45de06e82e8bd20a5cdc372b2df28335",
-        "label": " Fresh Strawberry Boba",
+        "label": " Strawberry Boba",
         "image": "https://www.edamam.com/web-img/b47/b47316c66a5f7f07eefc53447a96785f.jpg",
         "source": "Food52",
         "url": "https://food52.com/recipes/83200-strawberry-bubble-tea-recipe",
@@ -177,7 +177,7 @@
     {
       "recipe": {
         "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_f04cf2ef686735fc8e11e5b4c88a1874",
-        "label": "Watermelon Boba Slushie recipes",
+        "label": "Watermelon Boba Slushie",
         "image": "https://www.edamam.com/web-img/29e/29e9fc127ab207d2176b9beb7311b05c",
         "source": "thebutterhalf.com",
         "url": "http://www.thebutterhalf.com/watermelon-boba-slushie/",
@@ -245,7 +245,7 @@
     {
       "recipe": {
         "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_ba46b255a327be4bd472d561da500346",
-        "label": "Milk Tea Boba",
+        "label": "Milk Tea Boba Recipe",
         "image": "https://www.edamam.com/web-img/5c8/5c80b0884540364d706508a535e2565d.jpg",
         "source": "San Francisco Gate",
         "url": "http://www.sfgate.com/food/recipes/detail.html?rid=17775&sorig=qs",
