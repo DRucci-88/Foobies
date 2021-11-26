@@ -1,4 +1,4 @@
-import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent, IonCard } from "@ionic/react";
+import { IonPage, IonContent, IonCard } from "@ionic/react";
 
 import React from "react";
 
@@ -9,13 +9,6 @@ const Health: React.FC = () => {
     return (
     <IonPage>
         <AppBar title={'Health'} backButton={false}/>
-        {/*<IonHeader className="headerStyle">*/}
-        {/*  <IonToolbar className="title1Health">*/}
-        {/*    <IonTitle className="ion-text-center">*/}
-        {/*        <p>Health</p>*/}
-        {/*    </IonTitle>*/}
-        {/*  </IonToolbar>*/}
-        {/*</IonHeader>*/}
         <IonContent className="ion-padding">
             <IonCard className="titleHealth">
                 <h2>- - Please Choose - -</h2>

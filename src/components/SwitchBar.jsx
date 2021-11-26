@@ -139,25 +139,3 @@ const SwitchTabBar = () => {
 export default SwitchTabBar;
 
 
-// // <IonRouterOutlet>
-// //     <Route exact path="/home" component={Home}/>
-// //     <Route exact path={'/recipe/:id'} component={Recipe}/>
-// //     <Route exact path={'/profile'} component={Profile}/>
-// //     <Route exact path={'/search'} component={Search}/>
-// //     <Redirect exact path={'/'} to={'/home'}/>
-// // </IonRouterOutlet>
-// //
-// // <IonTabBar slot={'bottom'}>
-// //     <IonTabButton tab={'home'} href={'/home'} >
-// //         Home <IonIcon icon={home}/>
-// //     </IonTabButton>
-// //     <IonTabButton tab={'cook'}>
-// //         cook <IonIcon icon={restaurant}/>
-// //     </IonTabButton>
-// //     <IonTabButton tab={'health'}>
-// //         Health<IonIcon icon={medkit}/>
-// //     </IonTabButton>
-// //     <IonTabButton tab={'profile'} href={'/profile'} >
-// //         Profile <IonIcon icon={person}/>
-// //     </IonTabButton>
-// </IonTabBar>
