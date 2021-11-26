@@ -1,19 +1,21 @@
-import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent, IonApp, IonRouterOutlet, IonButton, IonCol, IonCard } from "@ionic/react";
-import { IonReactRouter } from "@ionic/react-router";
+import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent, IonCard } from "@ionic/react";
+
 import React from "react";
-import { Route, Redirect } from "react-router";
+
 import './Health.css';
+import AppBar from "../components/AppBar";
 
 const Health: React.FC = () => {
     return (
     <IonPage>
-        <IonHeader className="headerStyle">
-          <IonToolbar className="title1Health">
-            <IonTitle className="ion-text-center">
-                <p>Health</p>
-            </IonTitle>
-          </IonToolbar>
-        </IonHeader>
+        <AppBar title={'Health'} backButton={false}/>
+        {/*<IonHeader className="headerStyle">*/}
+        {/*  <IonToolbar className="title1Health">*/}
+        {/*    <IonTitle className="ion-text-center">*/}
+        {/*        <p>Health</p>*/}
+        {/*    </IonTitle>*/}
+        {/*  </IonToolbar>*/}
+        {/*</IonHeader>*/}
         <IonContent className="ion-padding">
             <IonCard className="titleHealth">
                 <h2>- - Please Choose - -</h2>
@@ -22,12 +24,14 @@ const Health: React.FC = () => {
             <IonCard color="light" routerLink={'/bmi'} className="bmiStyle">
                 <div className="bmi">
                     <img src="assets/images/bmi.png" alt="" />
+                    <h2 className="h2Card"> BMI Result</h2>
                 </div>
             </IonCard>
 
             <IonCard color="light" routerLink={'/bmr'} className="bmrStyle">
                 <div className="bmr">
                     <img src="assets/images/bmr.png" alt="" />
+                    <h2 className="h2Card"> BMR Result</h2>
                 </div>
             </IonCard>
           
