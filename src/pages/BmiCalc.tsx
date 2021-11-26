@@ -107,6 +107,11 @@ return (
       </IonHeader>
 
       <IonContent className="ion-padding">
+
+            <div className="bmi">
+                <img src="assets/images/bmi.png" alt="" />
+            </div>
+
         <IonGrid>
           <IonRow>
             <IonCol size-sm="8" offset-sm="2" size-md="6" offset-md="3">
