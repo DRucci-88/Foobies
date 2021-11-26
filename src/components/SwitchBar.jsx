@@ -7,6 +7,8 @@ import Home from '../pages/Home';
 import Tab2 from '../pages/Search';
 import Tab4 from '../pages/Profile';
 import Profile from '../pages/Profile';
+import BmrCalc from "../pages/BmrCalc";
+import BmiCalc from "../pages/BmiCalc";
 
 import React, {useEffect, useRef, useState} from "react";
 import {Redirect, Route} from "react-router";
@@ -125,6 +127,11 @@ const SwitchTabBar = () => {
                     })}
                 </IonTabBar>
             </IonTabs>
+
+
+            //Router tabs baru
+            <Route exact path={"/bmi"} component={BmiCalc}/>
+            <Route exact path={'/bmr'} component={BmrCalc}/>
         </IonReactRouter>
     );
 }

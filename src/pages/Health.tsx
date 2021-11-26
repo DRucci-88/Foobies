@@ -19,13 +19,13 @@ const Health: React.FC = () => {
                 <h2>- - Please Choose - -</h2>
             </IonCard>
 
-            <IonCard color="light" routerLink="/bmi" className="bmiStyle">
+            <IonCard color="light" routerLink={'/bmi'} className="bmiStyle">
                 <div className="bmi">
                     <img src="assets/images/bmi.png" alt="" />
                 </div>
             </IonCard>
 
-            <IonCard color="light" routerLink="/bmr" className="bmrStyle">
+            <IonCard color="light" routerLink={'/bmr'} className="bmrStyle">
                 <div className="bmr">
                     <img src="assets/images/bmr.png" alt="" />
                 </div>
