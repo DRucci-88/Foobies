@@ -4,7 +4,7 @@ import {home, medkit, person, restaurant,} from 'ionicons/icons';
 import Tab1 from '../pages/Home';
 import Tab3 from '../pages/Health';
 import Home from '../pages/Home';
-import Tab2 from '../pages/Search';
+import Tab2 from '../pages/Cook';
 import Tab4 from '../pages/Profile';
 import Profile from '../pages/Profile';
 import BmrCalc from "../pages/BmrCalc";
@@ -32,7 +32,7 @@ const SwitchTabBar = () => {
 
         {
             label: "Cook",
-            url: "/search",
+            url: "/cook",
             icon: restaurant,
             color: "#3578e5",
             backgroundColor: "#e7f0ff",
