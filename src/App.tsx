@@ -21,12 +21,13 @@ import './theme/variables.css';
 import './theme/custom-tab-bar.css'
 import React from "react";
 import SwitchBars from "./components/SwitchBars";
+import SwitchTabBar from "./components/SwitchBar";
 
 const App: React.FC = () => {
   return(
     <IonApp>
-      {/*<SwitchTabBar />*/}
-      <SwitchBars/>
+      <SwitchTabBar />
+      {/*<SwitchBars/>*/}
     </IonApp>
 );
 }
