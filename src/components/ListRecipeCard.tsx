@@ -1,6 +1,7 @@
 import React from "react";
 import {HomeHit} from "../data/static-recipe";
 import {IonCard, IonCardContent, IonCardTitle, IonCol, IonImg, IonRow} from "@ionic/react";
+import './ListRecipeCard.css';
 
 const ListRecipeCard: React.FC<{
   listRecipe: HomeHit[];
@@ -8,8 +9,12 @@ const ListRecipeCard: React.FC<{
 }> = props => {
 
   return (
-    <IonRow>
-      {props.listRecipe.length === 0 && <h1>KOSONG</h1>}
+    <IonRow className="stylingEmptyPage">
+      {props.listRecipe.length === 0 && <div className="searchEmpty">
+          <img src="assets/images/search.png" alt="" />
+            <h2 className="h2Card">Item not found</h2>
+            <p>Try searching the item with a different keyword.</p>
+          </div>}
       {props.listRecipe.map((recipe, index) => {
         return(
           <IonCol size={'6'} sizeSm={'4'} sizeMd={'3'} key={index}>

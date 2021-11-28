@@ -1,0 +1,22 @@
+.stylingEmptyPage {
+    justify-content: center;
+    border-radius: 50px;
+}
+
+.stylingEmptyPage h1 {
+    font-weight: 550;
+    color: white;
+}
+
+.searchEmpty {
+    padding: 100px;
+    text-align: center;
+}
+
+.searchEmpty h2 {
+    font-weight: 550;
+}
+
+.searchEmpty p {
+    color: gray;
+}
