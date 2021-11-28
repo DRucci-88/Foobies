@@ -1,7 +1,7 @@
-import React, {useEffect, useState} from "react";
+import React, {useState} from "react";
 import {
   IonButton,
-  IonContent, IonGrid, IonItem, IonItemDivider,
+  IonContent, IonGrid, IonItem,
   IonLabel,
   IonPage,
   IonRow,
@@ -21,14 +21,13 @@ const Cook: React.FC = () => {
   const [ingredients, setIngredients] = useState<string[]>([]);
   const [diet, setDiet] = useState<string>("");
   const [mealType, setMealType] = useState<string>("");
-  const [cuisineType, setCuisineType] = useState<string>("");
   const [presentCookLoader, dismissCookLoader] = useIonLoading();
   const [listRecipe, setListRecipe] = useState<HomeHit[]>([])
   const [errorAlert] = useIonAlert()
   const history = useHistory()
 
   const recipeResult = async () => {
-    const url = getListRecipeWithQuery(ingredients, diet, mealType, cuisineType);
+    const url = getListRecipeWithQuery(ingredients, diet, mealType);
     console.log(url);
     presentCookLoader({
       message: "Please Wait ...",
@@ -100,31 +99,6 @@ const Cook: React.FC = () => {
 
         <ListRecipeCard listRecipe={listRecipe} goToRecipe={goToRecipeHandler}/>
 
-        {/*<IonList>*/}
-        {/*  <IonItemDivider>*/}
-        {/*    <IonLabel>A</IonLabel>*/}
-        {/*  </IonItemDivider>*/}
-        {/*  <IonItem lines={"none"}>*/}
-        {/*    <IonLabel>Ayam</IonLabel>*/}
-        {/*  </IonItem>*/}
-        {/*  <IonItem lines={"none"}>*/}
-        {/*    <IonLabel>Almond</IonLabel>*/}
-        {/*  </IonItem>*/}
-        {/*  <IonItemDivider>*/}
-        {/*    <IonLabel>B</IonLabel>*/}
-        {/*  </IonItemDivider>*/}
-        {/*  <IonItem lines={"none"}>*/}
-        {/*    <IonLabel>Brocoli</IonLabel>*/}
-        {/*  </IonItem>*/}
-        {/*  <IonItem lines={"none"}>*/}
-        {/*    <IonLabel>Bacon</IonLabel>*/}
-        {/*  </IonItem>*/}
-        {/*</IonList>*/}
-        {/*<IonFab vertical="bottom" horizontal="end" slot="fixed">*/}
-        {/*  <IonFabButton>*/}
-        {/*    <IonIcon icon={add}/>*/}
-        {/*  </IonFabButton>*/}
-        {/*</IonFab>*/}
         </div>
       </IonContent>
     </IonPage>

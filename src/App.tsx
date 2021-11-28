@@ -1,8 +1,4 @@
-import { Redirect, Route } from 'react-router-dom';
-import {IonApp, IonIcon, IonRouterOutlet, IonTabBar, IonTabButton, IonTabs} from '@ionic/react';
-import { IonReactRouter } from '@ionic/react-router';
-import Home from './pages/Home';
-import SwitchTabBar from './components/SwitchBar';
+import {IonApp} from '@ionic/react';
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -24,17 +20,14 @@ import '@ionic/react/css/display.css';
 import './theme/variables.css';
 import './theme/custom-tab-bar.css'
 import React from "react";
-import {home, medkit, person, restaurant} from "ionicons/icons";
-import Recipe from "./pages/Recipe";
-import Profile from "./pages/Profile";
-import Search from "./pages/Search";
+import SwitchBars from "./components/SwitchBars";
 
 const App: React.FC = () => {
   return(
-
-  <IonApp>
-    <SwitchTabBar />
-  </IonApp>
+    <IonApp>
+      {/*<SwitchTabBar />*/}
+      <SwitchBars/>
+    </IonApp>
 );
 }
 

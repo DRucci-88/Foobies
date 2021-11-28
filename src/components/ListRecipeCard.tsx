@@ -11,7 +11,7 @@ const ListRecipeCard: React.FC<{
   return (
     <IonRow className="stylingEmptyPage">
       {props.listRecipe.length === 0 && <div className="searchEmpty">
-          <img src="assets/images/search.png" alt="" />
+          <img src={"assets/images/search.png"} alt="" />
             <h2 className="h2Card">Item not found</h2>
             <p>Try searching the item with a different keyword.</p>
           </div>}

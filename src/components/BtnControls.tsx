@@ -7,13 +7,13 @@ const BtnControls: React.FC<{onCalculate: () => void; onReset: () => void}> = pr
     <IonRow>
         <IonCol size="12" size-md="6" className="ion-text-center">
           <IonButton expand="block" color="success" onClick = {props.onCalculate}>
-            <IonIcon slot="start" icon={calculatorOutline}></IonIcon>
+            <IonIcon slot="start" icon={calculatorOutline}/>
             CALCULATE
           </IonButton>
         </IonCol>
         <IonCol size="12" size-md="6" className="ion-text-center">
           <IonButton fill="clear" color="medium" onClick = {props.onReset}>
-            <IonIcon slot="start" icon={refreshOutline}></IonIcon>
+            <IonIcon slot="start" icon={refreshOutline}/>
             RESET
           </IonButton>
         </IonCol>

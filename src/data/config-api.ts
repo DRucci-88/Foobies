@@ -19,12 +19,11 @@ export const getListRecipeWithSearch = (name: string) : string => {
 
 // https://api.edamam.com/api/recipes/v2?type=public&q=chicken%20egg&app_id=3f4f310f&app_key=a3fd0d28cd6a2b5c664de96da482a7c1&diet=high-fiber&cuisineType=Asian&mealType=Dinner
 // https://api.edamam.com/api/recipes/v2?type=public&q=chicken&app_id=3f4f310f&app_key=a3fd0d28cd6a2b5c664de96da482a7c1&diet=high-protein&cuisineType=South%20East%20Asian&mealType=Breakfast
-export const getListRecipeWithQuery = (ingredients: string[], diet: string = "", mealType: string = "", cuisineType: string = "") => {
+export const getListRecipeWithQuery = (ingredients: string[], diet: string = "", mealType: string = "") => {
 
   console.log(ingredients)
   console.log(diet)
   console.log(mealType)
-  console.log(cuisineType)
 
   let tempIngredient = "";
   // for(let temp of ingredients) tempIngredient.concat(temp+" ");
@@ -38,7 +37,6 @@ export const getListRecipeWithQuery = (ingredients: string[], diet: string = "",
 
   if(diet!=="") url = url + "&diet=" + diet
   if(mealType!=="") url = url + "&mealType=" + mealType
-  if(cuisineType!=="") url = url + "&cuisineType=" + cuisineType
 
   return url;
 }

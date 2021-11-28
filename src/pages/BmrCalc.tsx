@@ -1,8 +1,4 @@
-import { Redirect, Route } from 'react-router-dom';
-import { IonApp, IonRouterOutlet, IonTitle, IonToolbar, IonHeader, IonCol, IonGrid, IonInput, IonItem, IonLabel, IonRow, IonButton, IonIcon, IonCard, IonCardContent, IonAlert, IonContent, IonPage, IonItemDivider, IonList, IonListHeader, IonRadio, IonRadioGroup, IonBackButton } from '@ionic/react';
-import { calculatorOutline, refreshOutline } from 'ionicons/icons';
-import { IonReactRouter } from '@ionic/react-router';
-import Home from './Home';
+import { IonApp, IonTitle, IonToolbar, IonHeader, IonCol, IonGrid, IonInput, IonItem, IonLabel, IonRow, IonButton, IonAlert, IonContent, IonPage, IonListHeader, IonRadio, IonRadioGroup, IonBackButton } from '@ionic/react';
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -22,9 +18,7 @@ import '@ionic/react/css/display.css';
 
 /* Theme variables */
 import '../theme/variables.css';
-import {SetStateAction, useRef, useState} from "react";
-import { render } from '@testing-library/react';
-import { clear } from 'console';
+import React, {useRef, useState} from "react";
 
 import BtnControls from '../components/BtnControls';
 import BmrResult from '../components/BmrResult';
@@ -34,7 +28,7 @@ const BmrCalc: React.FC = () => {
   const [ calculatedBMR, setCalculatedBMR ] = useState<number>();
   const [ sedentary, setSedentary ] = useState<number>();
   const [ exercise1, setExercise1 ] = useState<number>();
-  const [ exercise2, seteExercise2 ] = useState<number>();
+  const [ exercise2, setExercise2 ] = useState<number>();
   const [ daily, setDaily ] = useState<number>();
   const [ intense, setIntense ] = useState<number>();
   const [ gender, setSelected ] = useState<number>();
@@ -77,14 +71,14 @@ const BmrCalc: React.FC = () => {
     let daily;
     let intense;
 
-    if (gender == 1){
+    if (gender === 1){
         bmr = 66 + (13.7 * weight) + (5 * height) - (6.8 * age);
         seden = bmr * 1.2;
         exercise1 = bmr * 1.375;
         exercise2 = bmr * 1.55;
         daily = bmr * 1.725;
         intense = bmr * 1.9;
-    } else if(gender == 2){
+    } else if(gender === 2){
         bmr = 655 + (9.6 * weight) + (1.8 * height) - (4.7 * age);
         seden = bmr * 1.2;
         exercise1 = bmr * 1.375;
@@ -97,7 +91,7 @@ const BmrCalc: React.FC = () => {
     setCalculatedBMR(bmr);
     setSedentary(seden);
     setExercise1(exercise1);
-    seteExercise2(exercise2);
+    setExercise2(exercise2);
     setDaily(daily);
     setIntense(intense);
   };
@@ -137,7 +131,7 @@ return (
       <IonContent className="ion-padding">
 
             <div className="bmr">
-                <img src="assets/images/bmr.png" alt="" />
+                <img src={"assets/images/bmr.png"} alt="" />
             </div>
             
       <IonGrid>
@@ -154,7 +148,7 @@ return (
             <IonCol>
               <IonItem>
                 <IonLabel position="floating">Age</IonLabel>
-                <IonInput ref={ageInputRef}></IonInput>
+                <IonInput ref={ageInputRef}/>
               </IonItem>
             </IonCol>
           </IonRow>
@@ -185,7 +179,7 @@ return (
             <IonCol>
               <IonItem>
                 <IonLabel position="floating">Tinggi Badan ({calcUnits === 'cmkg' ? 'cm' : 'feet'})</IonLabel>
-                <IonInput ref={heightInputRef}></IonInput>
+                <IonInput ref={heightInputRef}/>
               </IonItem>
             </IonCol>
           </IonRow>
@@ -194,7 +188,7 @@ return (
             <IonCol>
               <IonItem>
                 <IonLabel position="floating">Berat Badan ({calcUnits === 'cmkg' ? 'kg' : 'lbs'})</IonLabel>
-                <IonInput ref={weightInputRef}></IonInput>
+                <IonInput ref={weightInputRef}/>
               </IonItem>
             </IonCol>
           </IonRow>

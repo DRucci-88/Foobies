@@ -92,7 +92,7 @@ const Home: React.FC = () => {
         <IonGrid >
           <IonRow>
             <IonCol>
-              <div  className={homeStyle.search}onClick={() => history.push('/search')} >
+              <div  className={homeStyle.search} onClick={() => history.push('/search')} >
                 <IonSearchbar placeholder={'I am hungry'}/>
               </div>
             </IonCol>

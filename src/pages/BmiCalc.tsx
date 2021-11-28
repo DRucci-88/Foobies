@@ -1,8 +1,5 @@
-import { Redirect, Route } from 'react-router-dom';
-import { IonApp, IonRouterOutlet, IonTitle, IonToolbar, IonHeader, IonCol, IonGrid, IonInput, IonItem, IonLabel, IonRow, IonButton, IonIcon, IonCard, IonCardContent, IonAlert, IonContent, IonPage, IonBackButton } from '@ionic/react';
-import { calculatorOutline, colorFill, colorFillOutline, refreshOutline } from 'ionicons/icons';
-import { IonReactRouter } from '@ionic/react-router';
-import Home from './Home';
+import React from 'react'
+import { IonApp, IonTitle, IonToolbar, IonHeader, IonCol, IonGrid, IonInput, IonItem, IonLabel, IonRow, IonButton,IonAlert, IonContent, IonPage, IonBackButton } from '@ionic/react';
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -23,8 +20,6 @@ import '@ionic/react/css/display.css';
 /* Theme variables */
 import '../theme/variables.css';
 import {useRef, useState} from "react";
-import { render } from '@testing-library/react';
-import { clear } from 'console';
 
 import BtnControls from '../components/BtnControls';
 import BmiResult from '../components/BmiResult';
@@ -109,7 +104,7 @@ return (
       <IonContent className="ion-padding">
 
             <div className="bmi">
-                <img src="assets/images/bmi.png" alt="" />
+                <img src={"assets/images/bmi.png"} alt="" />
             </div>
 
         <IonGrid>
@@ -126,7 +121,7 @@ return (
                 <IonCol>
                   <IonItem>
                     <IonLabel position="floating">Tinggi Badan ({calcUnits === 'cmkg' ? 'cm' : 'feet'})</IonLabel>
-                    <IonInput ref={heightInputRef}></IonInput>
+                    <IonInput ref={heightInputRef}/>
                   </IonItem>
                 </IonCol>
               </IonRow>
@@ -135,7 +130,7 @@ return (
                 <IonCol>
                   <IonItem>
                     <IonLabel position="floating">Berat Badan ({calcUnits === 'cmkg' ? 'kg' : 'lbs'})</IonLabel>
-                    <IonInput ref={weightInputRef}></IonInput>
+                    <IonInput ref={weightInputRef}/>
                   </IonItem>
                 </IonCol>
               </IonRow>
