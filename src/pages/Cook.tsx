@@ -1,24 +1,21 @@
 import React, {useEffect, useState} from "react";
 import {
   IonButton,
-  IonCol,
-  IonContent, IonFab, IonFabButton, IonIcon, IonItem, IonItemDivider,
-  IonLabel, IonList,
+  IonContent, IonGrid, IonItem, IonItemDivider,
+  IonLabel,
   IonPage,
   IonRow,
-  IonSearchbar,
   IonSelect,
   IonSelectOption, useIonAlert, useIonLoading,
 } from "@ionic/react";
 import AppBar from "../components/AppBar";
-import {add} from "ionicons/icons";
-import cookStyle from './Cook.module.scss'
 import {cookQuery} from "../data/cook-data";
 import {getListRecipeWithQuery} from "../data/config-api";
 import {HomeHit} from "../data/static-recipe";
 import axios from "axios";
 import {useHistory} from "react-router";
 import ListRecipeCard from "../components/ListRecipeCard";
+import cookStyle from "./Cook.module.scss";
 
 const Cook: React.FC = () => {
   const [ingredients, setIngredients] = useState<string[]>([]);
@@ -58,17 +55,20 @@ const Cook: React.FC = () => {
   }
 
   return (
-    <IonPage>
+    <IonPage className={cookStyle.topbar}>
       <AppBar title={'Recipe'} backButton={false}/>
 
       <IonContent>
+        <div className={cookStyle.topHeader}>
+          <IonGrid>
         <IonRow>
-          <p className={'ion-margin-horizontal'}> Tak perlu pusing lagi mau masak apa hari ini. Tinggal pilih bahan yang kamu
+          <p className={cookStyle.title}> Tak perlu pusing lagi mau masak apa hari ini. Tinggal pilih bahan yang kamu
             punya (Pilih minimal 2 bahan)</p>
         </IonRow>
-        <IonItem>
+          </IonGrid>
+        <IonItem >
           <IonLabel>Bahan Makanan </IonLabel>
-          <IonSelect value={ingredients} multiple={true} cancelText="Nah" okText="Okay!"
+          <IonSelect className={cookStyle.select} value={ingredients} multiple={true} cancelText="Nah" okText="Okay!"
                      onIonChange={e => setIngredients(e.detail.value)}>
             {cookQuery.ingredients.map((value => (
               <IonSelectOption key={value} value={value}>{value}</IonSelectOption>
@@ -76,9 +76,9 @@ const Cook: React.FC = () => {
           </IonSelect>
         </IonItem>
 
-        <IonItem>
+        <IonItem >
           <IonLabel>Diet </IonLabel>
-          <IonSelect value={diet} multiple={false} cancelText="Nah" okText="Okay!"
+          <IonSelect className={cookStyle.select} value={diet} multiple={false} cancelText="Nah" okText="Okay!"
                      onIonChange={e => setDiet(e.detail.value)}>
             {cookQuery.diet.map((value => (
               <IonSelectOption key={value} value={value}>{value}</IonSelectOption>
@@ -88,7 +88,7 @@ const Cook: React.FC = () => {
 
         <IonItem>
           <IonLabel>Meal Type </IonLabel>
-          <IonSelect value={mealType} multiple={false} cancelText="Nah" okText="Okay!"
+          <IonSelect className={cookStyle.select} value={mealType} multiple={false} cancelText="Nah" okText="Okay!"
                      onIonChange={e => setMealType(e.detail.value)}>
             {cookQuery.mealType.map((value => (
               <IonSelectOption key={value} value={value}>{value}</IonSelectOption>
@@ -96,7 +96,7 @@ const Cook: React.FC = () => {
           </IonSelect>
         </IonItem>
 
-        <IonButton expand={'block'} onClick={recipeResult}>Search</IonButton>
+        <IonButton className={cookStyle.button}  onClick={recipeResult}>Search</IonButton>
 
         <ListRecipeCard listRecipe={listRecipe} goToRecipe={goToRecipeHandler}/>
 
@@ -125,6 +125,7 @@ const Cook: React.FC = () => {
         {/*    <IonIcon icon={add}/>*/}
         {/*  </IonFabButton>*/}
         {/*</IonFab>*/}
+        </div>
       </IonContent>
     </IonPage>
   )
