@@ -12,7 +12,8 @@ import BmiCalc from "../pages/BmiCalc";
 
 import React, {useEffect, useRef, useState} from "react";
 import {Redirect, Route} from "react-router";
-
+import Recipe from "../pages/Recipe";
+import Search from "../pages/Search";
 
 const SwitchTabBar = () => {
 
@@ -98,13 +99,14 @@ const SwitchTabBar = () => {
 
                         return (
                             <Route key={index} exact path={tab.url}>
-                                <tab.component />
+                                <tab.component/>
                             </Route>
                         );
                     })}
+                    <Route exact path={'/recipe/:id'} component={Recipe}/>
 
                     <Route exact path="/">
-                        <Redirect to="/home" />
+                        <Redirect to="/home"/>
                     </Route>
                 </IonRouterOutlet>
                 <IonTabBar slot="bottom" onIonTabsDidChange={e => setActiveTab(e.detail.tab)}>
@@ -115,11 +117,13 @@ const SwitchTabBar = () => {
                         const isActive = activeTab === `tab${index}`;
 
                         return (
-                            <IonTabButton key={index} style={isActive ? tabStyle : {}} tab={`tab${index}`} href={tab.url}>
+                            <IonTabButton key={index} style={isActive ? tabStyle : {}} tab={`tab${index}`}
+                                          href={tab.url}>
 
-                                <IonIcon icon={tab.icon} />
+                                <IonIcon icon={tab.icon}/>
 
-                                {isActive && <CreateAnimation ref={ref => switchRefs.current[index] = ref} {...switchAnimation}>
+                                {isActive &&
+                                <CreateAnimation ref={ref => switchRefs.current[index] = ref} {...switchAnimation}>
                                     <IonLabel>{tab.label}</IonLabel>
                                 </CreateAnimation>}
                             </IonTabButton>
@@ -130,6 +134,7 @@ const SwitchTabBar = () => {
 
 
             //Router tabs baru
+            <Route exact path={"/search"} component={Search}/>
             <Route exact path={"/bmi"} component={BmiCalc}/>
             <Route exact path={'/bmr'} component={BmrCalc}/>
         </IonReactRouter>

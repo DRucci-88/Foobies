@@ -6,7 +6,7 @@ const CookResult: React.FC = () => {
 
     return (
         <IonPage>
-            <AppBar title={'Hasil Pencarian'} backButton={false}/>
+            <AppBar title={'Hasil Pencarian'} backButton={true}/>
         </IonPage>
     )
 }

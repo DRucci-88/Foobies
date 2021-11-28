@@ -9,6 +9,7 @@ const ListRecipeCard: React.FC<{
 
   return (
     <IonRow>
+      {props.listRecipe.length === 0 && <h1>KOSONG</h1>}
       {props.listRecipe.map((recipe, index) => {
         return(
           <IonCol size={'6'} sizeSm={'4'} sizeMd={'3'} key={index}>
