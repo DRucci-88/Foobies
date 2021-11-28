@@ -31,28 +31,24 @@ const Cook: React.FC = () => {
   const history = useHistory()
 
   const recipeResult = async () => {
-    // console.log(ingredients)
-    // console.log(diet)
-    // console.log(mealType)
-    // console.log(cuisineType)
     const url = getListRecipeWithQuery(ingredients, diet, mealType, cuisineType);
     console.log(url);
-    // presentCookLoader({
-    //   message: "Please Wait ...",
-    //   spinner: 'bubbles',
-    //   backdropDismiss: true,
-    //   duration: 4000
-    // });
-    // await axios.get(url)
-    //   .then((response) => {
-    //     setListRecipe(response.data.hits)
-    //   })
-    //   .catch((error)=>{
-    //     errorAlert(error.response.data[0].message)
-    //   });
-    // setTimeout(() => {
-    //   dismissCookLoader();
-    // }, 300);
+    presentCookLoader({
+      message: "Please Wait ...",
+      spinner: 'bubbles',
+      backdropDismiss: true,
+      duration: 4000
+    });
+    await axios.get(url)
+      .then((response) => {
+        setListRecipe(response.data.hits)
+      })
+      .catch((error)=>{
+        errorAlert(error.response.data[0].message)
+      });
+    setTimeout(() => {
+      dismissCookLoader();
+    }, 300);
   }
 
   const goToRecipeHandler = (href: string) => {
@@ -95,16 +91,6 @@ const Cook: React.FC = () => {
           <IonSelect value={mealType} multiple={false} cancelText="Nah" okText="Okay!"
                      onIonChange={e => setMealType(e.detail.value)}>
             {cookQuery.mealType.map((value => (
-              <IonSelectOption key={value} value={value}>{value}</IonSelectOption>
-            )))}
-          </IonSelect>
-        </IonItem>
-
-        <IonItem>
-          <IonLabel>Cuisine Type </IonLabel>
-          <IonSelect value={cuisineType} multiple={false} cancelText="Nah" okText="Okay!"
-                     onIonChange={e => setCuisineType(e.detail.value)}>
-            {cookQuery.cuisineType.map((value => (
               <IonSelectOption key={value} value={value}>{value}</IonSelectOption>
             )))}
           </IonSelect>
