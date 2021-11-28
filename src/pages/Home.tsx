@@ -72,7 +72,7 @@ const Home: React.FC = () => {
     // console.log(href);  // Raw URL to JSON
     const id = href.split('?')[0].split('/')[6];
     // console.log(id);
-    history.push(`/recipe/${id}`);
+    history.push(`/recipe/${id}`)
   }
 
   useEffect(() => {

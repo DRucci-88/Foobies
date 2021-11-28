@@ -22,7 +22,6 @@ const AppBar: React.FC<{
         <IonButtons slot={'end'}>
           <IonButton>
             <IonBadge slot={'start'}>0</IonBadge> &nbsp;
-            Bookmark
             <IonIcon slot={'end'} icon={bookmark}/>
           </IonButton>
         </IonButtons>
