@@ -134,8 +134,8 @@ const SwitchTabBar = () => {
                 </IonTabBar>
             </IonTabs>
 
-            {/*<Route exact path={"/bmi"} component={BmiCalc}/>*/}
-            {/*<Route exact path={'/bmr'} component={BmrCalc}/>*/}
+            <Route exact path={"/bmi"} component={BmiCalc}/>
+            <Route exact path={'/bmr'} component={BmrCalc}/>
 
         </IonReactRouter>
     );
