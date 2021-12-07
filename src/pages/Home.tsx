@@ -19,10 +19,22 @@ import DataSlider from "../components/DataSlider";
 import {useHistory} from "react-router";
 import AppBar from "../components/AppBar";
 
+import "../firebaseConfig";
+import { getFirestore, getDocs, collection } from 'firebase/firestore';
+import { getStorage } from 'firebase/storage';
+
 const Home: React.FC = () => {
 
-  const history = useHistory();
+  // Firebase 9 Modular
+  const storage = getStorage();
+  const db = getFirestore();
 
+  const getData = async () => {
+    const querySnapshot = await getDocs(collection(db, 'users'));
+    console.log(querySnapshot.docs[0].data());
+  }
+
+  const history = useHistory();
   // Food Slider
   const [foodDataSlider, setFoodDataSlider] = useState<Array<HomeHit>>([]);
   // Drinks Slider
@@ -79,7 +91,10 @@ const Home: React.FC = () => {
     setFoodDataSlider(foodRecipes.chicken.hits);
     setDrinksDataSlider(drinksRecipes.boba.hits);
     setDessertsDataSlider(dessertsRecipes.banana_cake.hits);
+    getData().then(() => '')
   }, []);
+
+
 
 // splash screen - login page - homepage
   return (

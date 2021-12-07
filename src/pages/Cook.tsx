@@ -62,7 +62,7 @@ const Cook: React.FC = () => {
           <IonGrid>
         <IonRow>
           <p className={cookStyle.title}> Tak perlu pusing lagi mau masak apa hari ini. Tinggal pilih bahan yang kamu
-            punya (Pilih minimal 2 bahan)</p>
+            punya (Pilih minimal 1 bahan)</p>
         </IonRow>
           </IonGrid>
         <IonItem >

@@ -86,7 +86,7 @@ const SwitchTabBar = () => {
     useEffect(() => {
 
         const tabIndex = activeTab.match(/\d+/)[0];
-        console.log(tabIndex);
+        // console.log(tabIndex);
         switchRefs.current[tabIndex].animation.play();
     }, [activeTab]);
 

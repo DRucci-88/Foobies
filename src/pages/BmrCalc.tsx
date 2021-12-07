@@ -194,7 +194,8 @@ return (
           </IonRow>
 
           <BtnControls onCalculate={calculateBMR} onReset={resetInputs}/>
-          {calculatedBMR && 
+
+          {calculatedBMR &&
           sedentary && 
           exercise1 && 
           exercise2 &&
