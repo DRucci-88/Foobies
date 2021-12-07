@@ -1,19 +1,21 @@
 import React from "react";
 import {IonCard, IonContent, IonItem, IonLabel, IonList, IonListHeader, IonPage} from "@ionic/react";
 
-import './Favorite.css';
+import './Favorite.scss';
+import AppBar from "../components/AppBar";
 const Favorite: React.FC = () => {
   return(
       <IonPage>
+          <AppBar title={'Favorite'} backButton={true}/>
         <IonContent className="ion-padding">
-          <IonCard className="titleFav">
+          <IonCard className={'titleFav'}>
             <h2>Favorite</h2>
           </IonCard>
-          <IonList className={"background_list"}>
+          <IonList className={'background_list'}>
             <IonListHeader> My Favorite</IonListHeader>
             <IonItem className="itemList">
-              <img className={'images'} src={'assets/example/kids.png'}/>
-              <IonLabel className="name"> Makanan</IonLabel>
+              <img className={'images'} src={'assets/example/kids.png'} alt={'bocah'}/>
+              <IonLabel color="dark"> Makanan</IonLabel>
             </IonItem>
           </IonList>
 

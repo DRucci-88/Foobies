@@ -1,6 +1,6 @@
 import React from "react";
 import {HomeHit} from "../data/static-recipe";
-import {IonCard, IonCardContent, IonCardTitle, IonCol, IonImg, IonRow} from "@ionic/react";
+import {IonCard, IonCardContent, IonCardSubtitle, IonCardTitle, IonCol, IonImg, IonRow} from "@ionic/react";
 import './ListRecipeCard.css';
 
 const ListRecipeCard: React.FC<{
@@ -21,9 +21,9 @@ const ListRecipeCard: React.FC<{
             <IonCard
               onClick={() => props.goToRecipe(recipe._links.self.href)}>
               <IonCardContent>
-                <IonCardTitle>
+                <IonCardContent>
                   {recipe.recipe.label}
-                </IonCardTitle>
+                </IonCardContent>
               </IonCardContent>
               <IonImg src={recipe.recipe.image} />
             </IonCard>
