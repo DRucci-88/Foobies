@@ -1,11 +1,15 @@
 import React from "react";
 import {IonBackButton, IonBadge, IonButton, IonButtons, IonHeader, IonIcon, IonTitle, IonToolbar} from "@ionic/react";
 import {bookmark} from "ionicons/icons";
+import {useHistory} from "react-router";
 
 const AppBar: React.FC<{
   title: string;
   backButton: boolean;
 }> = props => {
+
+  const history = useHistory()
+
   return (
     <IonHeader className={'ion-no-margin'}>
       <IonToolbar>
@@ -19,7 +23,7 @@ const AppBar: React.FC<{
           <p className={'ion-no-margin'}>Chef </p>
         </IonTitle>
 
-        <IonButtons slot={'end'}>
+        <IonButtons slot={'end'} onClick={() => history.push('/favorite')}>
           <IonButton>
             <IonBadge slot={'start'}>0</IonBadge> &nbsp;
             <IonIcon slot={'end'} icon={bookmark}/>

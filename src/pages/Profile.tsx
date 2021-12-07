@@ -10,8 +10,12 @@ import {
 import profileStyle from './Profile.module.scss'
 import {arrowForward} from "ionicons/icons";
 import AppBar from "../components/AppBar";
+import {useHistory} from "react-router";
 
 const Profile: React.FC = () => {
+
+  const history = useHistory()
+
   return(
     <IonPage className={profileStyle.profile}>
 
@@ -25,7 +29,6 @@ const Profile: React.FC = () => {
           <IonRow className="ion-justify-content-center">
             <IonCol size="12" className="ion-justify-content-center ion-align-items-center ion-text-center">
               <IonCard className={ profileStyle.profileHeader }>
-
                 <IonCardContent>
                   <IonCardTitle slot= "start">Profile</IonCardTitle>
                   <IonRow>
@@ -46,13 +49,13 @@ const Profile: React.FC = () => {
           </IonRow>
         </IonGrid>
 
-        <IonGrid>
+        <IonGrid onClick={() => history.push('/aboutUs')} >
           <IonRow className={ profileStyle.profileActionContainer }>
             <IonCol size="12">
               <IonCard className={ profileStyle.profileActionCard }>
                 <IonCardContent>
                   <IonRow className="ion-justify-content-between">
-                    <IonCardSubtitle>history</IonCardSubtitle>
+                    <IonCardSubtitle>About Us</IonCardSubtitle>
                     <IonIcon icon={ arrowForward } />
                   </IonRow>
                 </IonCardContent>

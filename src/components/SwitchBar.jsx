@@ -14,6 +14,8 @@ import React, {useEffect, useRef, useState} from "react";
 import {Redirect, Route} from "react-router";
 import Recipe from "../pages/Recipe";
 import Search from "../pages/Search";
+import AboutUs from "../pages/AboutUs";
+import Favorite from "../pages/Favorite";
 
 const SwitchTabBar = () => {
 
@@ -136,6 +138,8 @@ const SwitchTabBar = () => {
 
             <Route exact path={"/bmi"} component={BmiCalc}/>
             <Route exact path={'/bmr'} component={BmrCalc}/>
+            <Route exact path={'/aboutUs'} component={AboutUs}/>
+            <Route exact path={'/favorite'} component={Favorite}/>
 
         </IonReactRouter>
     );
