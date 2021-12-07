@@ -3,12 +3,16 @@ import {IonAvatar, IonBackButton, IonButton, IonButtons, IonCard, IonCardContent
 import profileStyle from './Profile.module.scss'
 import {bookmark} from "ionicons/icons";
 import './AboutUs.css';
+import AppBar from "../components/AppBar";
 
 const AboutUs: React.FC = () => {
   return (
     <IonPage>
+
+      {/*<AppBar title={'Our Team'} backButton={false}/>*/}
+
       <IonHeader>
-      <IonToolbar>
+        <IonToolbar>
         <IonButtons slot="start">
           <IonBackButton defaultHref="/" />
         </IonButtons>
