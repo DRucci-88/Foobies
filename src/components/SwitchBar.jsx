@@ -23,7 +23,6 @@ const SwitchTabBar = () => {
     const switchRefs = useRef([]);
 
     const tabs = [
-
         {
             label: "Home",
             url: "/home",
@@ -32,7 +31,6 @@ const SwitchTabBar = () => {
             backgroundColor: "#FFBC97",
             component: Tab1
         },
-
         {
             label: "Cook",
             url: "/cook",
