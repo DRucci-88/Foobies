@@ -1,7 +1,9 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import {IonBackButton, IonBadge, IonButton, IonButtons, IonHeader, IonIcon, IonTitle, IonToolbar} from "@ionic/react";
 import {bookmark} from "ionicons/icons";
 import {useHistory} from "react-router";
+import {getAuth} from "firebase/auth";
+import {FavFirebase} from "../data/favFirebase";
 
 const AppBar: React.FC<{
   title: string;
@@ -9,6 +11,22 @@ const AppBar: React.FC<{
 }> = props => {
 
   const history = useHistory()
+  const [name, setName] = useState<string>('')
+  const [favCount, setFavCount] = useState<number>(0)
+
+  useEffect(() => {
+    const auth = getAuth()
+    auth.onAuthStateChanged((user) => {
+      if (user){
+        setName(user.displayName!)
+        const stored: FavFirebase[] = JSON.parse(sessionStorage.getItem('fav')!)
+        // console.log(stored[0])
+        setFavCount(stored.length)
+      }
+      else setName("Chef")
+    })
+
+  },[])
 
   return (
     <IonHeader className={'ion-no-margin'}>
@@ -20,12 +38,12 @@ const AppBar: React.FC<{
         )}
         <IonTitle>
           {props.title}
-          <p className={'ion-no-margin'}>Chef </p>
+          <p className={'ion-no-margin'}>{name}</p>
         </IonTitle>
 
         <IonButtons slot={'end'} onClick={() => history.push('/favorite')}>
           <IonButton>
-            <IonBadge slot={'start'}>0</IonBadge> &nbsp;
+            <IonBadge slot={'start'}>{favCount}</IonBadge> &nbsp;
             <IonIcon slot={'end'} icon={bookmark}/>
           </IonButton>
         </IonButtons>

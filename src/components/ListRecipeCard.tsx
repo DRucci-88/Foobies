@@ -21,9 +21,12 @@ const ListRecipeCard: React.FC<{
             <IonCard
               onClick={() => props.goToRecipe(recipe._links.self.href)}>
               <IonCardContent>
-                <IonCardContent>
-                  {recipe.recipe.label}
-                </IonCardContent>
+                <IonCardTitle>
+                  {recipe.recipe.label.length > 20 ?
+                    recipe.recipe.label.substr(0, 20) + "..."
+                    :
+                    recipe.recipe.label}
+                </IonCardTitle>
               </IonCardContent>
               <IonImg src={recipe.recipe.image} />
             </IonCard>

@@ -19,11 +19,38 @@ import '@ionic/react/css/display.css';
 /* Theme variables */
 import './theme/variables.css';
 import './theme/custom-tab-bar.css'
-import React from "react";
-import SwitchBars from "./components/SwitchBars";
+import React, {useEffect} from "react";
 import SwitchTabBar from "./components/SwitchBar";
-
+import {getAuth} from "firebase/auth";
+import './firebaseConfig'
+import {collection, getDocs, getFirestore, doc, getDoc} from "firebase/firestore";
+import {FavFirebase} from "./data/favFirebase";
 const App: React.FC = () => {
+
+  useEffect(() => {
+
+    function configStart() {
+      const auth = getAuth()
+      auth.onAuthStateChanged(async (user) => {
+        if(user) {
+          const db = getFirestore()
+          const docSnap = await getDoc(doc(db, 'users', user.uid))
+          const a : FavFirebase[] = docSnap.get('fav') as FavFirebase[]
+          console.log(a);
+          sessionStorage.setItem('fav', JSON.stringify(a))
+          setTimeout(() => '',1000)
+        }
+        else{
+
+        }
+
+      })
+    }
+    configStart()
+  },[])
+
+  // sessionStorage.setItem("fav", JSON.stringify())
+
   return(
     <IonApp>
       <SwitchTabBar />

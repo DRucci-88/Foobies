@@ -11,45 +11,94 @@ import {
   IonList,
   IonListHeader,
   IonLabel,
-  IonItem, IonImg, useIonAlert
+  IonItem, IonImg, useIonAlert, IonButton
 } from "@ionic/react";
 import recipeStyle from './Recipe.module.scss';
-import {useParams} from "react-router";
+import {useHistory, useParams} from "react-router";
 import {layersOutline, peopleOutline, scaleOutline, timeOutline} from "ionicons/icons";
 import axios from "axios";
 import {Hit} from "../data/recipe-response";
 import {getRecipeURLWithId} from "../data/config-api";
 import AppBar from "../components/AppBar";
+import {FavFirebase} from "../data/favFirebase";
+import {getAuth} from "firebase/auth";
+import {getFirestore, updateDoc, arrayUnion, doc} from "firebase/firestore";
 
 const Recipe: React.FC = () => {
 
   // https://stackoverflow.com/questions/63635997/how-to-access-route-params-from-react-router-dom-using-typescript-ex-some-ro
-  const id = useParams<{id: string}>();
+  const id = useParams<{ id: string }>();
   const url = getRecipeURLWithId(id.id);
   const [recipeAPI, setRecipeAPI] = useState<Hit>();
   const [errorAlert] = useIonAlert();
+  const [present] = useIonAlert()
+  const history = useHistory()
+  const [isFavorite, setIsFavorite] = useState<boolean>(false);
+  const stored: FavFirebase[] = JSON.parse(sessionStorage.getItem('fav')!)
 
-  useEffect(  () => {
-    console.log(id);
-    console.log(url);
+  useEffect(() => {
+    // console.log(id.id);
+    // console.log(url);
 
     axios.get(url)
       .then((response) => {
         setRecipeAPI(response.data);
-        console.log(response.data);
+        // console.log(response.data);
       })
       .catch((error) => {
-        console.log(error.response.status);
+        // console.log(error.response.status);
         errorAlert(error.response.data[0].message);
       })
-  },[]);
+
+    for(let i = 0; i < stored.length; i++){
+      if(stored[i].id.localeCompare(id.id) === 0)
+        setIsFavorite(true)
+    }
+  }, []);
+
+  const addToFavorite = () => {
+    console.log("Add to Favorite")
+    const auth = getAuth()
+
+    if (recipeAPI?.recipe.label === undefined || recipeAPI?.recipe.image === undefined)
+      return
+
+    const recipe : FavFirebase = {
+      id: id.id,
+      name: recipeAPI?.recipe.label,
+      image: recipeAPI?.recipe.image!
+    }
+
+    // https://firebase.google.com/docs/firestore/manage-data/add-data#update_elements_in_an_array
+    auth.onAuthStateChanged( async (user) => {
+      if(user){
+        const db = getFirestore()
+        await updateDoc(doc(db, 'users', user.uid), {
+          fav: arrayUnion(recipe)
+        })
+        setIsFavorite(true)
+        stored.push(recipe)
+        sessionStorage.setItem('fav', JSON.stringify(stored))
+        console.log(stored)
+      }
+      else {
+        present({
+          header: 'Add to favorite ?',
+          message: 'You must sign in first',
+          buttons: [{ text: 'Sign In', handler: () => history.replace('/profile') }, 'Ok'],
+          onDidDismiss: (e) => console.log('did dismiss'),
+        })
+      }
+    })
+
+  }
+  const removeFromFavorite = () => {
+
+  }
 
   useCallback(async () => {
     console.log(id);
-    // await axios.get(url).then((response) => {
-    //   console.log(response);
-    // })
-  },[id])
+  }, [id])
 
   return (
     <IonPage>
@@ -58,9 +107,9 @@ const Recipe: React.FC = () => {
 
       <IonContent fullscreen>
 
-        <div className={ recipeStyle.headerImage }>
-          <img src={ recipeAPI?.recipe.image } alt="main cover" />
-          <div className={ `${ recipeStyle.headerInfo }` }>
+        <div className={recipeStyle.headerImage}>
+          <img src={recipeAPI?.recipe.image} alt="main cover"/>
+          <div className={`${recipeStyle.headerInfo}`}>
             <h1>{recipeAPI?.recipe.label}</h1>
             <p>{recipeAPI?.recipe.dishType[0]}</p>
             <p>{recipeAPI?.recipe.mealType[0]}</p>
@@ -72,33 +121,45 @@ const Recipe: React.FC = () => {
           <IonRow className="ion-text-center">
             <IonCol size="6" sizeSm={'3'}>
               <IonCardTitle>
-                <IonIcon icon={ peopleOutline } />
+                <IonIcon icon={peopleOutline}/>
               </IonCardTitle>
               <IonCardSubtitle>serves {recipeAPI?.recipe.yield}</IonCardSubtitle>
             </IonCol>
             <IonCol size="6" sizeSm={'3'}>
               <IonCardTitle>
-                <IonIcon icon={ timeOutline } />
+                <IonIcon icon={timeOutline}/>
               </IonCardTitle>
               <IonCardSubtitle>{recipeAPI?.recipe.totalTime ? `${recipeAPI.recipe.totalTime} mins` : "N/A"}</IonCardSubtitle>
             </IonCol>
             <IonCol size="6" sizeSm={'3'}>
               <IonCardTitle>
-                <IonIcon icon={ scaleOutline } />
+                <IonIcon icon={scaleOutline}/>
               </IonCardTitle>
               <IonCardSubtitle>{recipeAPI?.recipe.totalWeight.toFixed()}g</IonCardSubtitle>
             </IonCol>
             <IonCol size={'6'} sizeSm={'3'}>
               <IonCardTitle>
-                <IonIcon icon={ layersOutline }/>
+                <IonIcon icon={layersOutline}/>
               </IonCardTitle>
               <IonCardSubtitle>{recipeAPI?.recipe.calories.toFixed()} calories</IonCardSubtitle>
             </IonCol>
           </IonRow>
 
-          <IonRow className={'ion-text-center'}>
-
-          </IonRow>
+          {isFavorite ?
+            <IonButton
+              expand={'block'}
+              color={'primary'}
+              onClick={() => removeFromFavorite()}>
+              Remove from Favorites
+            </IonButton>
+          :
+            <IonButton
+              expand={'block'}
+              color={'secondary'}
+              onClick={() => addToFavorite()}>
+              Add to Favorites
+            </IonButton>
+          }
 
           <IonList>
             <IonListHeader lines={'full'}>
@@ -107,7 +168,7 @@ const Recipe: React.FC = () => {
             {recipeAPI?.recipe.ingredients.map((ingredient, index) => {
               return (
                 <IonItem key={index} lines={'full'} className={recipeStyle.ingredientItem}>
-                  <IonImg src={ingredient.image} className={ recipeStyle.ingredientImg }/>
+                  <IonImg src={ingredient.image} className={recipeStyle.ingredientImg}/>
                   <IonLabel className={'ion-margin-start'}>
                     <h2>{ingredient.text}</h2>
                   </IonLabel>

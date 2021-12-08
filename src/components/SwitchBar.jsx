@@ -108,6 +108,8 @@ const SwitchTabBar = () => {
                     <Route exact path={'/favorite'} component={Favorite}/>
                     <Route exact path={'/recipe/:id'} component={Recipe}/>
                     <Route exact path={"/search"} component={Search}/>
+                    <Route exact path={"/bmi"} component={BmiCalc}/>
+                    <Route exact path={'/bmr'} component={BmrCalc}/>
 
                     <Route exact path="/">
                         <Redirect to="/home"/>
@@ -135,10 +137,6 @@ const SwitchTabBar = () => {
                     })}
                 </IonTabBar>
             </IonTabs>
-
-            <Route exact path={"/bmi"} component={BmiCalc}/>
-            <Route exact path={'/bmr'} component={BmrCalc}/>
-
 
         </IonReactRouter>
     );

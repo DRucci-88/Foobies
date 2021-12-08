@@ -30,8 +30,8 @@ const Home: React.FC = () => {
   const db = getFirestore();
 
   const getData = async () => {
-    const querySnapshot = await getDocs(collection(db, 'users'));
-    console.log(querySnapshot.docs[0].data());
+    // const querySnapshot = await getDocs(collection(db, 'users'));
+    // console.log(querySnapshot.docs[0].data());
   }
 
   const history = useHistory();

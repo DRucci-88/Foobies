@@ -39,7 +39,7 @@ const Cook: React.FC = () => {
       .then((response) => {
         setListRecipe(response.data.hits)
       })
-      .catch((error)=>{
+      .catch((error) => {
         errorAlert(error.response.data[0].message)
       });
     setTimeout(() => {
@@ -60,44 +60,46 @@ const Cook: React.FC = () => {
       <IonContent>
         <div className={cookStyle.topHeader}>
           <IonGrid>
-        <IonRow>
-          <p className={cookStyle.title}> Tak perlu pusing lagi mau masak apa hari ini. Tinggal pilih bahan yang kamu
-            punya (Pilih minimal 1 bahan)</p>
-        </IonRow>
+            <IonRow>
+              <p className={cookStyle.title}>
+                No need to worry about what to cook today.
+                Just choose the ingredient you have (Choose at least 1 ingredient)
+              </p>
+            </IonRow>
           </IonGrid>
-        <IonItem >
-          <IonLabel>Bahan Makanan </IonLabel>
-          <IonSelect className={cookStyle.select} value={ingredients} multiple={true} cancelText="Nah" okText="Okay!"
-                     onIonChange={e => setIngredients(e.detail.value)}>
-            {cookQuery.ingredients.map((value => (
-              <IonSelectOption key={value} value={value}>{value}</IonSelectOption>
-            )))}
-          </IonSelect>
-        </IonItem>
+          <IonItem>
+            <IonLabel>Ingredients </IonLabel>
+            <IonSelect className={cookStyle.select} value={ingredients} multiple={true} cancelText="Nah" okText="Okay!"
+                       onIonChange={e => setIngredients(e.detail.value)}>
+              {cookQuery.ingredients.map((value => (
+                <IonSelectOption key={value} value={value}>{value}</IonSelectOption>
+              )))}
+            </IonSelect>
+          </IonItem>
 
-        <IonItem >
-          <IonLabel>Diet </IonLabel>
-          <IonSelect className={cookStyle.select} value={diet} multiple={false} cancelText="Nah" okText="Okay!"
-                     onIonChange={e => setDiet(e.detail.value)}>
-            {cookQuery.diet.map((value => (
-              <IonSelectOption key={value} value={value}>{value}</IonSelectOption>
-            )))}
-          </IonSelect>
-        </IonItem>
+          <IonItem>
+            <IonLabel>Diet </IonLabel>
+            <IonSelect className={cookStyle.select} value={diet} multiple={false} cancelText="Nah" okText="Okay!"
+                       onIonChange={e => setDiet(e.detail.value)}>
+              {cookQuery.diet.map((value => (
+                <IonSelectOption key={value} value={value}>{value}</IonSelectOption>
+              )))}
+            </IonSelect>
+          </IonItem>
 
-        <IonItem>
-          <IonLabel>Meal Type </IonLabel>
-          <IonSelect className={cookStyle.select} value={mealType} multiple={false} cancelText="Nah" okText="Okay!"
-                     onIonChange={e => setMealType(e.detail.value)}>
-            {cookQuery.mealType.map((value => (
-              <IonSelectOption key={value} value={value}>{value}</IonSelectOption>
-            )))}
-          </IonSelect>
-        </IonItem>
+          <IonItem>
+            <IonLabel>Meal Type </IonLabel>
+            <IonSelect className={cookStyle.select} value={mealType} multiple={false} cancelText="Nah" okText="Okay!"
+                       onIonChange={e => setMealType(e.detail.value)}>
+              {cookQuery.mealType.map((value => (
+                <IonSelectOption key={value} value={value}>{value}</IonSelectOption>
+              )))}
+            </IonSelect>
+          </IonItem>
 
-        <IonButton className={cookStyle.button}  onClick={recipeResult}>Search</IonButton>
+          <IonButton className={cookStyle.button} onClick={recipeResult}>Search</IonButton>
 
-        <ListRecipeCard listRecipe={listRecipe} goToRecipe={goToRecipeHandler}/>
+          <ListRecipeCard listRecipe={listRecipe} goToRecipe={goToRecipeHandler}/>
 
         </div>
       </IonContent>

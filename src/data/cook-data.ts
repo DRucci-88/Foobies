@@ -1,5 +1,5 @@
 const ingredients: string[] = [
-  'Chicken', 'Egg', 'fish', 'meat', 'pasta', 'rice',
+  'Chicken', 'Egg', 'Fish', 'Meat', 'Pasta', 'Rice',
   'Bacon','Mushroom','Onion','Spinach','Peperoni',
   'Sausage','Cheese'
 ]
