@@ -100,8 +100,8 @@ const Profile: React.FC = () => {
     //   history.replace('/home')
     //   window.location.reload();
     // }, 1000)
-
   }
+
   return(
     <IonPage className={profileStyle.profile}>
 
@@ -152,20 +152,6 @@ const Profile: React.FC = () => {
             </IonCol>
           </IonRow>
         </IonGrid>
-        <IonGrid>
-          <IonRow className={ profileStyle.profileActionContainer }>
-            <IonCol size="12">
-              <IonCard className={ profileStyle.profileActionCard }>
-                <IonCardContent>
-                  <IonRow className="ion-justify-content-between">
-                    <IonCardSubtitle>Favorite  Recipes</IonCardSubtitle>
-                    <IonIcon icon={ arrowForward } />
-                  </IonRow>
-                </IonCardContent>
-              </IonCard>
-            </IonCol>
-          </IonRow>
-        </IonGrid>
 
         <IonGrid>
           <IonRow className={ profileStyle.profileActionContainer }>
@@ -173,7 +159,7 @@ const Profile: React.FC = () => {
               <IonCard className={ profileStyle.profileActionCard }>
                 <IonCardContent>
                   <IonRow className="ion-justify-content-between">
-                    <IonCardSubtitle>FAQ</IonCardSubtitle>
+                    <IonCardSubtitle>Favorite  Recipes</IonCardSubtitle>
                     <IonIcon icon={ arrowForward } />
                   </IonRow>
                 </IonCardContent>
