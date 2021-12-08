@@ -80,19 +80,20 @@ const Profile: React.FC = () => {
                 <IonCard className={ profileStyle.profileHeader }>
                   <IonCardContent>
                     <IonCardTitle slot= "start">{username}</IonCardTitle>
-                    <IonRow>
-                      <IonCard>
+                    <IonRow className="ion-justify-content-center ion-align-items-center ion-text-center">
+                      
                         <IonCol size="4">
                           <img src={photoUrl === '' ? 'assets/example/kids.png' : photoUrl}
                                alt="avatar"
                                className={ profileStyle.avatar } />
                         </IonCol>
+
                         <IonCol size="12">
                           <IonText color="dark" className={ profileStyle.profileName }>
                             <h2>{email}</h2>
                           </IonText>
                         </IonCol>
-                      </IonCard>
+                     
                     </IonRow>
                   </IonCardContent>
                 </IonCard>
@@ -146,9 +147,13 @@ const Profile: React.FC = () => {
         </IonGrid>
 
         {isSingIn ?
-          <IonButton expand={'block'} onClick={() => auth.signOut()}>Sign Out</IonButton>
+        <IonRow className={ profileStyle.signout1Style }>
+            <IonButton expand={'block'} onClick={() => auth.signOut()} className={ profileStyle.signoutStyle }>Sign Out</IonButton>
+        </IonRow>
           :
-          <IonButton expand={'block'} onClick={() => signInWithFirebase()}>Sign In</IonButton>
+        <IonRow className={ profileStyle.signin1Style }>
+          <IonButton expand={'block'} onClick={() => signInWithFirebase()} className={ profileStyle.signinStyle }>Sign In</IonButton>
+        </IonRow>
         }
 
       </IonContent>
