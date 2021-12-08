@@ -9,21 +9,7 @@ const AboutUs: React.FC = () => {
   return (
     <IonPage>
 
-      {/*<AppBar title={'Our Team'} backButton={false}/>*/}
-
-      <IonHeader>
-        <IonToolbar>
-        <IonButtons slot="start">
-          <IonBackButton defaultHref="/" />
-        </IonButtons>
-        <IonButtons slot="end">
-            <IonButton>
-              <IonIcon slot="icon-only" icon={bookmark}/>
-            </IonButton>
-          </IonButtons>
-        <IonTitle className="titleAboutUs">Our Team</IonTitle>
-      </IonToolbar>
-    </IonHeader>
+      <AppBar title={'Our Team'} backButton={true}/>
 
       <IonContent>
       <div className={ profileStyle.topHeader }/>
@@ -31,16 +17,16 @@ const AboutUs: React.FC = () => {
           <IonRow className="ion-justify-content-center">
             <IonCol size="12" className="ion-justify-content-center ion-align-items-center ion-text-center">
               
-                <IonCardContent>
+                <IonCard>
                   <IonCardTitle slot= "start"></IonCardTitle>
                   <IonRow>
                     <IonCard>
                       <IonCol size="4">
-                        <img src={"assets/images/aboutus.jpg"} alt="avatar" className={ profileStyle.avatar } />
+                        <img src={"assets/images/logoAbout.png"} alt="avatar" className={ profileStyle.avatar } />
                       </IonCol>
                     </IonCard>
                   </IonRow>
-                </IonCardContent>
+                </IonCard>
               
             </IonCol>
           </IonRow>
