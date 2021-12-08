@@ -34,11 +34,15 @@ const Recipe: React.FC = () => {
   const [present] = useIonAlert()
   const history = useHistory()
   const [isFavorite, setIsFavorite] = useState<boolean>(false);
-  const stored: FavFirebase[] = JSON.parse(sessionStorage.getItem('fav')!)
 
   useEffect(() => {
     // console.log(id.id);
     // console.log(url);
+    const stored: FavFirebase[] = JSON.parse(sessionStorage.getItem('fav')!)
+    if (stored.length >= 0)
+      for(let i = 0; i < stored.length; i++)
+        if(stored[i].id.localeCompare(id.id) === 0)
+          setIsFavorite(true)
 
     axios.get(url)
       .then((response) => {
@@ -50,10 +54,6 @@ const Recipe: React.FC = () => {
         errorAlert(error.response.data[0].message);
       })
 
-    for(let i = 0; i < stored.length; i++){
-      if(stored[i].id.localeCompare(id.id) === 0)
-        setIsFavorite(true)
-    }
   }, []);
 
   const addToFavorite = () => {
@@ -76,6 +76,7 @@ const Recipe: React.FC = () => {
         await updateDoc(doc(db, 'users', user.uid), {
           fav: arrayUnion(recipe)
         })
+        const stored: FavFirebase[] = JSON.parse(sessionStorage.getItem('fav')!)
         setIsFavorite(true)
         stored.push(recipe)
         sessionStorage.setItem('fav', JSON.stringify(stored))

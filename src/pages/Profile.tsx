@@ -51,14 +51,14 @@ const Profile: React.FC = () => {
         }).then(r => '')
       }
       else {
-        getRedirectResult(auth)
-          .then((result) => {
-            console.log(result?.user)
-          })
-          .catch((error) => {
-            console.log("ERROR LER");
-            console.log(error)
-          })
+        // getRedirectResult(auth)
+        //   .then((result) => {
+        //     console.log(result?.user)
+        //   })\
+        //   .catch((error) => {
+        //     console.log("ERROR LER");
+        //     console.log(error)
+        //   })
       }
       setTimeout(() => {
         dismissLoading();
@@ -70,13 +70,21 @@ const Profile: React.FC = () => {
   // https://firebase.google.com/docs/reference/js/auth.user.md#user_interface
   const signInWithFirebase = () => {
     signInWithRedirect(auth, provider).then()
+    getRedirectResult(auth)
+      .then((result) => {
+        console.log(result?.user)
+      })
+      .catch((error) => {
+        console.log("ERROR LER");
+        console.log(error)
+      })
   }
 
   const signOutWithFirebase = () => {
     auth.signOut().then();
     window.location.reload();
     setIsSignIn(false);
-    sessionStorage.setItem('fav', '')
+    sessionStorage.clear()
   }
   return(
     <IonPage className={profileStyle.profile}>

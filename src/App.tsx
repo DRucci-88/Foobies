@@ -41,7 +41,7 @@ const App: React.FC = () => {
           setTimeout(() => '',1000)
         }
         else{
-
+          sessionStorage.setItem('fav', JSON.stringify({}))
         }
 
       })
