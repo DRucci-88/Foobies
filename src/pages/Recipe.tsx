@@ -22,7 +22,7 @@ import {getRecipeURLWithId} from "../data/config-api";
 import AppBar from "../components/AppBar";
 import {FavFirebase} from "../data/favFirebase";
 import {getAuth} from "firebase/auth";
-import {getFirestore, updateDoc, arrayUnion, doc} from "firebase/firestore";
+import {getFirestore, updateDoc, arrayUnion, doc, arrayRemove} from "firebase/firestore";
 
 const Recipe: React.FC = () => {
 
@@ -34,6 +34,7 @@ const Recipe: React.FC = () => {
   const [present] = useIonAlert()
   const history = useHistory()
   const [isFavorite, setIsFavorite] = useState<boolean>(false);
+  const auth = getAuth()
 
   useEffect(() => {
     // console.log(id.id);
@@ -58,11 +59,9 @@ const Recipe: React.FC = () => {
 
   const addToFavorite = () => {
     console.log("Add to Favorite")
-    const auth = getAuth()
 
     if (recipeAPI?.recipe.label === undefined || recipeAPI?.recipe.image === undefined)
       return
-
     const recipe : FavFirebase = {
       id: id.id,
       name: recipeAPI?.recipe.label,
@@ -93,7 +92,38 @@ const Recipe: React.FC = () => {
 
   }
   const removeFromFavorite = () => {
-
+    console.log("Remove from Favorite")
+    if (recipeAPI?.recipe.label === undefined || recipeAPI?.recipe.image === undefined)
+      return
+    const recipe : FavFirebase = {
+      id: id.id,
+      name: recipeAPI?.recipe.label,
+      image: recipeAPI?.recipe.image!
+    }
+    // https://firebase.google.com/docs/firestore/manage-data/add-data#update_elements_in_an_array
+    auth.onAuthStateChanged( async (user) => {
+      if(user){
+        const db = getFirestore()
+        await updateDoc(doc(db, 'users', user.uid), {
+          fav: arrayRemove(recipe)
+        })
+        const stored: FavFirebase[] = JSON.parse(sessionStorage.getItem('fav')!)
+        setIsFavorite(false)
+        const index = stored.indexOf(recipe)
+        if (index === -1)
+          stored.splice(index, 1)
+        sessionStorage.setItem('fav', JSON.stringify(stored))
+        console.log(stored)
+      }
+      else {
+        present({
+          header: 'Add to favorite ?',
+          message: 'You must sign in first',
+          buttons: [{ text: 'Sign In', handler: () => history.replace('/profile') }, 'Ok'],
+          onDidDismiss: (e) => console.log('did dismiss'),
+        })
+      }
+    })
   }
 
   useCallback(async () => {

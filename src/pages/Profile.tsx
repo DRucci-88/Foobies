@@ -6,7 +6,7 @@ import {
   IonGrid,
   IonIcon,
   IonPage,
-  IonRow, IonText, useIonLoading,
+  IonRow, IonText, useIonAlert, useIonLoading,
 } from "@ionic/react";
 import profileStyle from './Profile.module.scss'
 import {arrowForward} from "ionicons/icons";
@@ -27,6 +27,7 @@ const Profile: React.FC = () => {
   const [photoUrl, setPhotoUrl] = useState<string>('')
   const [email, setEmail] = useState<string>('')
   const [showLoading, dismissLoading] = useIonLoading();
+  const [present] = useIonAlert()
 
   useEffect(() => {
     showLoading({
@@ -51,14 +52,21 @@ const Profile: React.FC = () => {
         }).then(r => '')
       }
       else {
-        getRedirectResult(auth)
-          .then((result) => {
-            console.log(result?.user)
-          })
-          .catch((error) => {
-            console.log("ERROR LER");
-            console.log(error)
-          })
+        console.log("Profile Error")
+        // getRedirectResult(auth)
+        //   .then((result) => {
+        //     console.log(result?.user)
+        //     present({
+        //       header: 'Alert',
+        //       message: 'Something wrong with google service',
+        //       buttons: [{ text: 'Ok', handler: () => history.push('/home') }],
+        //       onDidDismiss: (e) => console.log('did dismiss'),
+        //     })
+        //   })
+        //   .catch((error) => {
+        //     console.log("ERROR LER");
+        //     console.log(error)
+        //   })
       }
       setTimeout(() => {
         dismissLoading();
@@ -70,9 +78,9 @@ const Profile: React.FC = () => {
   // https://firebase.google.com/docs/reference/js/auth.user.md#user_interface
   const signInWithFirebase = () => {
     signInWithRedirect(auth, provider).then();
-    setTimeout(() => {
-      window.location.reload();
-    }, 1000)
+    // setTimeout(() => {
+    //   window.location.reload();
+    // }, 1000)
     // getRedirectResult(auth)
     //   .then((result) => {
     //     console.log(result?.user)
@@ -87,10 +95,11 @@ const Profile: React.FC = () => {
     auth.signOut().then();
     sessionStorage.clear();
     setIsSignIn(false);
-    setTimeout(() => {
-      history.replace('/home')
-      window.location.reload();
-    }, 1000)
+    window.location.reload()
+    // setTimeout(() => {
+    //   history.replace('/home')
+    //   window.location.reload();
+    // }, 1000)
 
   }
   return(

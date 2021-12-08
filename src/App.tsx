@@ -30,6 +30,8 @@ const App: React.FC = () => {
   useEffect(() => {
 
     function configStart() {
+      sessionStorage.clear()
+      console.log("APP")
       const auth = getAuth()
       auth.onAuthStateChanged(async (user) => {
         if(user) {
