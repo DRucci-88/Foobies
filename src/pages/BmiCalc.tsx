@@ -14,7 +14,9 @@ import {
   IonAlert,
   IonContent,
   IonPage,
-  IonBackButton
+  IonBackButton,
+  IonButtons,
+  IonIcon
 } from '@ionic/react';
 
 /* Core CSS required for Ionic components to work properly */
@@ -40,6 +42,7 @@ import {useRef, useState} from "react";
 import BtnControls from '../components/BtnControls';
 import BmiResult from '../components/BmiResult';
 import InputControl from '../components/InputControl';
+import { body } from 'ionicons/icons';
 
 const BmiCalc: React.FC = () => {
   const [calculatedBMI, setCalculatedBMI] = useState<number>();
@@ -118,10 +121,15 @@ const BmiCalc: React.FC = () => {
         <IonApp>
           <IonHeader>
             <IonToolbar>
-              <IonButton slot="start" color="light">
-                <IonBackButton defaultHref="home"/>
-              </IonButton>
-              <IonTitle>BMI Calculator</IonTitle>
+              <IonButtons slot="start">
+                <IonBackButton defaultHref="/" />
+              </IonButtons>
+              <IonButtons slot="end">
+                  <IonButton>
+                    <IonIcon slot="icon-only" icon={body}/>
+                  </IonButton>
+                </IonButtons>
+              <IonTitle className="titleAboutUs">BMI Calculator</IonTitle>
             </IonToolbar>
           </IonHeader>
 
