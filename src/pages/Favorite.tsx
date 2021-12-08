@@ -1,14 +1,10 @@
 import React, {useEffect, useState} from "react";
 import {
-  IonAvatar,
   IonCard, IonCol,
   IonContent, IonGrid, IonIcon,
   IonImg,
   IonItem, IonItemOption, IonItemOptions,
   IonItemSliding,
-  IonLabel,
-  IonList,
-  IonListHeader,
   IonPage,
   IonRow
 } from "@ionic/react";
@@ -35,7 +31,7 @@ const Favorite: React.FC = () => {
           <h2>Favorite</h2>
         </IonCard>
 
-        {favList.map((fav, index) => (
+        {favList.length > 0 && favList.map((fav, index) => (
           <IonItemSliding key={fav.id}>
             <IonItemOptions slot={'end'}>
               <IonItemOption color={'primary'} onClick={() => ''}>

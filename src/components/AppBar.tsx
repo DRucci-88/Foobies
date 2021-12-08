@@ -25,7 +25,6 @@ const AppBar: React.FC<{
       }
       else setName("Chef")
     })
-
   },[])
 
   return (
