@@ -19,9 +19,15 @@ const AppBar: React.FC<{
     auth.onAuthStateChanged((user) => {
       if (user){
         setName(user.displayName!)
-        const stored: FavFirebase[] = JSON.parse(sessionStorage.getItem('fav')!)
+        try {
+          const stored: FavFirebase[] = JSON.parse(sessionStorage.getItem('fav')!)
+          setFavCount(stored.length)
+        }
+        catch (e){
+        }
+
         // console.log(stored[0])
-        setFavCount(stored.length)
+
       }
       else setName("Chef")
     })

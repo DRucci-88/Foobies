@@ -68,7 +68,6 @@ const Recipe: React.FC = () => {
       name: recipeAPI?.recipe.label,
       image: recipeAPI?.recipe.image!
     }
-
     // https://firebase.google.com/docs/firestore/manage-data/add-data#update_elements_in_an_array
     auth.onAuthStateChanged( async (user) => {
       if(user){
