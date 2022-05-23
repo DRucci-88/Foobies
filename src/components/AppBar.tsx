@@ -10,9 +10,9 @@ const AppBar: React.FC<{
   backButton: boolean;
 }> = props => {
 
-  const history = useHistory()
-  const [name, setName] = useState<string>('')
-  const [favCount, setFavCount] = useState<number>(0)
+  const history = useHistory();
+  const [name, setName] = useState<string>('');
+  const [favCount, setFavCount] = useState<number>(0);
 
   useEffect(() => {
     const auth = getAuth()
