@@ -17,10 +17,10 @@ Foobies is an Mobile Application that made using Ionic Framework and integration
 
 # Dependency
 
-- <a src='https://www.edamam.com/'>Edamam API</a>
-- <a src='https://swiperjs.com/'>SwiperJS</a>
-- <a src='https://firebase.google.com/'>Firebase</a>
-- <a src='https://axios-http.com/'>Axios</a>
+- <a href='https://www.edamam.com/'>Edamam API</a>
+- <a href='https://swiperjs.com/'>SwiperJS</a>
+- <a href='https://firebase.google.com/'>Firebase</a>
+- <a href='https://axios-http.com/'>Axios</a>
 
 # Our Teams
 
