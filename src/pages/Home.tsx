@@ -64,7 +64,7 @@ const Home: React.FC = () => {
       case 'juice': setDrinksDataSlider(drinksRecipes.juice.hits); break;
       case 'milk': setDrinksDataSlider(drinksRecipes.milk.hits); break;
       case 'milkshake': setDrinksDataSlider(drinksRecipes.milkshake.hits); break;
-      case 'thai tea': setDrinksDataSlider(drinksRecipes.thai_tea.hits); break;
+      // case 'thai tea': setDrinksDataSlider(drinksRecipes.thai_tea.hits); break;
       default: setDrinksDataSlider(drinksRecipes.boba.hits); break;
     }
   }
@@ -72,11 +72,11 @@ const Home: React.FC = () => {
   const dessertsCategoryHandler = (selectedCategory: string) => {
     console.log(selectedCategory);
     switch (selectedCategory.toLowerCase()) {
-      case 'banana cake': setDessertsDataSlider(dessertsRecipes.banana_cake.hits); break;
       case 'brownies': setDessertsDataSlider(dessertsRecipes.brownies.hits); break;
+      case 'cake': setDessertsDataSlider(dessertsRecipes.cake.hits); break;
       case 'pancake': setDessertsDataSlider(dessertsRecipes.pancake.hits); break;
       case 'pudding': setDessertsDataSlider(dessertsRecipes.pudding.hits); break;
-      default: setDessertsDataSlider(dessertsRecipes.banana_cake.hits); break;
+      default: setDessertsDataSlider(dessertsRecipes.brownies.hits); break;
     }
   }
 
@@ -90,7 +90,7 @@ const Home: React.FC = () => {
   useEffect(() => {
     setFoodDataSlider(foodRecipes.chicken.hits);
     setDrinksDataSlider(drinksRecipes.boba.hits);
-    setDessertsDataSlider(dessertsRecipes.banana_cake.hits);
+    setDessertsDataSlider(dessertsRecipes.brownies.hits);
     getData().then(() => '')
   }, []);
 
